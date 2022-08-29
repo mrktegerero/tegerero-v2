@@ -2,8 +2,7 @@ import preprocess from 'svelte-preprocess';
 import * as path from 'node:path';
 
 import { fileURLToPath } from 'url';
-// import adapter from '@sveltejs/adapter-cloudflare-workers';
-import adapter from '@svelte/adapter-cloudflare-workers';
+import adapter from '@sveltejs/adapter-cloudflare-workers'
 
 const __filename = fileURLToPath(import.meta.url);
 

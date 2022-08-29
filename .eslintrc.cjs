@@ -8,9 +8,13 @@ module.exports = {
 	settings: {
 		'svelte3/typescript': () => require('typescript')
 	},
+	rules: {
+		'@typescript-eslint/explicit-module-boundary-types': 'off',
+		'@typescript-eslint/ban-types': 'off'
+	},
 	parserOptions: {
 		sourceType: 'module',
-		ecmaVersion: 2020
+		ecmaVersion: 2019
 	},
 	env: {
 		browser: true,
