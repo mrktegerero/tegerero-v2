@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	// import { page } from '$app/stores';
 	// import icon from '$images/favicon-32x32.png';
 	export let title: string = `Tegerero`;
 	export let description = '';
@@ -9,7 +9,7 @@
 
 <svelte:head>
 	<!-- General Tags -->
-	<title>{title} &mdash; Porter's Paints</title>
+	<title>{title}</title>
 	<meta name="description" content={description} />
 
 	<!-- Open Graph Tags -->
@@ -38,8 +38,8 @@
 
 	<!-- Url tags-->
 
-	<meta property="og:url" content={$page.url.toString()} />
-	<link rel="canonical" href={$page.url.toString()} />
+	<!-- <meta property="og:url" content={$page.url.toString()} />
+	<link rel="canonical" href={$page.url.toString()} /> -->
 
 	<!-- <link rel="icon" type="image/png" sizes="32x32" href={icon} /> -->
 </svelte:head>

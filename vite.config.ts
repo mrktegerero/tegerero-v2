@@ -1,19 +1,26 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { execSync } from 'node:child_process';
-import type { UserConfig } from 'vite';
+import image2 from './image2.js';
+import tailwindConfig from './tailwindConfigPlugin.js';
 import * as path from 'path';
 
 const commitHash = execSync('git rev-parse HEAD').toString().trimEnd();
 
 /** @type {import('vite').UserConfig} */
-const config: UserConfig = {
-	plugins: [sveltekit()],
+const config = {
+	plugins: [tailwindConfig(), image2(), sveltekit()],
 	build: {
 		rollupOptions: {
 			output: {
 				hoistTransitiveImports: false
 			}
 		}
+	},
+	server: {
+		port: 3000,
+		// watch: {
+		// 	ignored: ['!**/node_modules/@porterspaints/queries/**']
+		// }
 	},
 	define: {
 		__COMMIT_HASH__: `"${commitHash}"`
