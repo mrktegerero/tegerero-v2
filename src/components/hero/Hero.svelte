@@ -10,4 +10,7 @@ import Spacer from "$components/common/Spacer.svelte";
     <h1 class="pl-5 text-5xl leading-[5.5rem] block relative">END</h1>
     <h1 class="text-5xl leading-[5.5rem] block relative">DEVELOPER</h1>
   </div>
+  <div class="pt-52">
+    <h2 class="font-mono">Kurt Rendel Tegerero</h2>
+  </div>
 </div>
