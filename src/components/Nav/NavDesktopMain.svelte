@@ -1,14 +1,14 @@
 <script lang="ts">
 	import Container from '$components/containers/Container.svelte';
-import IconResume from '$components/icons/IconResume.svelte';
+	import IconResume from '$components/icons/IconResume.svelte';
 
-	export let duration:string = '1000ms';
-	export let offset:number = 0;
-	export let tolerance:number = 0;
+	export let duration: string = '1000ms';
+	export let offset: number = 0;
+	export let tolerance: number = 0;
 
-	let headerClass:string = 'show';
-	let y:number = 0;
-	let lastY:number = 0;
+	let headerClass: string = 'show';
+	let y: number = 0;
+	let lastY: number = 0;
 
 	function deriveClass(y, dy) {
 		if (y < offset) {
@@ -41,10 +41,11 @@ import IconResume from '$components/icons/IconResume.svelte';
 
 <svelte:window bind:scrollY={y} />
 
-<div use:setTransitionDuration class="nav {headerClass}" >
+<div use:setTransitionDuration class="nav {headerClass}" class:nav-scroll={y >= 1}>
 	<Container wide class="hidden lg:block">
 		<div
-			class="navigation bg-transparent h-[6.25rem] mx-auto flex px-16 3xl:px-2 justify-between items-between w-full" class:nav-scroll={y >= 1}
+			class="navigation w-full mx-auto flex justify-between bg-transparent h-[6.25rem] px-16 3xl:px-2"
+			class:nav-height={y >= 1}
 		>
 			<div class="flex flex-grow items-center">
 				<slot name="navLink" />
@@ -55,7 +56,7 @@ import IconResume from '$components/icons/IconResume.svelte';
 			</div>
 			<div class="flex flex-grow items-center justify-end">
 				<div class="w-6 text-dark-text border-dark-text">
-					<IconResume/>
+					<IconResume />
 				</div>
 			</div>
 		</div>
@@ -74,6 +75,10 @@ import IconResume from '$components/icons/IconResume.svelte';
 
 	.nav-scroll {
 		@apply h-[4.25rem] bg-[rgba(237,_237,_237,_0.85)] shadow-[0_10px_30px_-10px_#DFDFDF];
+	}
+
+	.nav-height {
+		@apply h-[4.25rem];
 	}
 	.show {
 		@apply translate-y-0;
