@@ -10,8 +10,9 @@ module.exports = {
     fontFamily: {
 			//	satoshi: ['PlusJakartaSans', ...defaultTheme.fontFamily.sans],
 			// sans: ['PlusJakartaSans', ...defaultTheme.fontFamily.sans],
-			satoshi: ['Satoshi-Variable', ...defaultTheme.fontFamily.sans],
-      monts: ['Montserrat', ...defaultTheme.fontFamily.mono]
+			cali: ['Calibre', ...defaultTheme.fontFamily.sans],
+      monts: ['Montserrat', ...defaultTheme.fontFamily.serif],
+			mono: ['SFMono', ...defaultTheme.fontFamily.mono]
 		},
     extend: {
       fontSize: {
@@ -25,12 +26,14 @@ module.exports = {
 			},
 
       colors: {
-        primary: '#87C232',
-        'primary-dark': '#618930',
+        primary: '#E3AE22',
+        'primary-dark': '#D0A211',
         // secondary: ,
         // dark-text: ,
+				'white-bg': '#EDEDED',
         'dark-bg': '#222629',
-        'muted-text': '#6B6E70',
+				'dark-text': '#0B0B0B',
+        'muted-text': '#353539',
         'light-text': '#FEFEFE',
 
       },

@@ -5,25 +5,63 @@
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="preload" href="/fonts/Satoshi-Variable.woff2" as="font" type="font/woff2" crossorigin />
-		<link rel="preload" href="/fonts/Montserrat-VF.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/Calibre/Calibre-Regular.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/Calibre/Calibre-Medium.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/Calibre/Calibre-Semibold.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/Montserrat/Montserrat-VF.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/SFMono/SFMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/SFMono/SFMono-Semibold.woff2" as="font" type="font/woff2" crossorigin />
 	
 		<style>
 		@font-face {
 			font-family: 'Montserrat';
-			src: url('/fonts/Montserrat-VF.woff2') format('woff2');
+			src: url('/fonts/Montserrat/Montserrat-VF.woff2') format('woff2');
 			font-display: swap;
 			font-style: normal;
 			font-weight: 200 800;
 			font-synthesis: none;
 		}
 		@font-face {
-			font-family: 'SatoshiVariable';
-			src: 
-			url("/fonts/Satoshi-Variable.woff2") format("woff2");
+			font-family: 'Calibre';
+			src: url("/fonts/Calibre/Calibre-Regular.woff2") format("woff2");
 			font-display: swap;
 			font-style: normal;
-			font-weight: 200 800;
+			font-weight: 400;
+			font-synthesis: none;
+		}
+
+		@font-face {
+			font-family: 'Calibre';
+			src: url("/fonts/Calibre/Calibre-Medium.woff2") format("woff2");
+			font-display: swap;
+			font-style: normal;
+			font-weight: 500;
+			font-synthesis: none;
+		}
+
+		@font-face {
+			font-family: 'Calibre';
+			src: url("/fonts/Calibre/Calibre-Semibold.woff2") format("woff2");
+			font-display: swap;
+			font-style: normal;
+			font-weight: 600;
+			font-synthesis: none;
+		}
+
+		@font-face {
+			font-family: 'SFMono';
+			src: url("/fonts/SFMono/SFMono-Regular.woff2") format("woff2");
+			font-display: swap;
+			font-style: normal;
+			font-weight: 400;
+			font-synthesis: none;
+		}
+		@font-face {
+			font-family: 'SFMono';
+			src: url("/fonts/SFMono/SFMono-Semibold.woff2") format("woff2");
+			font-display: swap;
+			font-style: normal;
+			font-weight: 600;
 			font-synthesis: none;
 		}
 		</style>

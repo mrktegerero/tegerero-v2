@@ -3,27 +3,39 @@
 @tailwind utilities;
 
 @layer base {
+
+	*, *:before, *:after {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+	}
+
   html {
     display: block;
+		scroll-behavior: smooth;
   }
 
   body {
-    @apply font-satoshi;
-    @apply bg-dark-bg text-light-text;
+    @apply font-cali text-xl;
+    @apply bg-white-bg text-dark-text;
   }
 
   	/* Defaults */
 
+	h1, h2, h3, h4, h5, h5 {
+		@apply font-monts font-extrabold;
+	} 
+
 	h1 {
-		@apply text-4xl font-bold;
+		@apply text-4xl;
 	}
 	h2 {
-		@apply text-3xl font-bold;
+		@apply text-3xl;
 	}
 	h3 {
-		@apply text-2xl font-bold;
-	}
+		@apply text-2xl; 
+	} 
 	h4 {
-		@apply text-xl font-bold;
+		@apply text-xl;
 	}
 }

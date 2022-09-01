@@ -30,7 +30,7 @@
 		padding: 0 1rem;
 	}
 
-  .try {
-    @apply visible opacity-100 ;
-  }
+	.try {
+		@apply visible opacity-100;
+	}
 </style>

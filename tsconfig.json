@@ -51,7 +51,7 @@
 			],
 		}
 	},
-	"include": [	
+	"include": [
 		"src/**/*.d.ts",
 		"src/**/*.js",
 		"src/**/*.ts",
