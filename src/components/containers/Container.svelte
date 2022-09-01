@@ -1,4 +1,6 @@
 <script lang="ts">
+	export let element: Element = undefined;
+	export let id: string = undefined;
 	let classes: string = '';
 	export { classes as class };
 	export let wide = false;
@@ -8,7 +10,7 @@
 	$: img = background ? `url('${background?.replaceAll('\\', '/')}')` : '';
 </script>
 
-<div class="bg-cover {classes} try" style:background-image={img}>
+<div class="bg-cover {classes} try" style:background-image={img} {id} bind:this={element}>
 	<div class="mx-auto" class:default={!wide} class:wide class:gutters class:fluid><slot /></div>
 </div>
 
@@ -27,7 +29,7 @@
 	/* Probably want to expand on this to include breakpoint-based gutter settings */
 
 	.gutters {
-		padding: 0 1rem;
+		@apply px-[1rem] lg:px-[7rem] 3xl:px-[1rem];
 	}
 
 	.try {

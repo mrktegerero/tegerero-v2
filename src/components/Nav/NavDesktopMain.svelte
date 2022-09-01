@@ -1,26 +1,84 @@
 <script lang="ts">
 	import Container from '$components/containers/Container.svelte';
-	let classes = '';
-	export { classes as class };
+import IconResume from '$components/icons/IconResume.svelte';
+
+	export let duration:string = '1000ms';
+	export let offset:number = 0;
+	export let tolerance:number = 0;
+
+	let headerClass:string = 'show';
+	let y:number = 0;
+	let lastY:number = 0;
+
+	function deriveClass(y, dy) {
+		if (y < offset) {
+			return 'show';
+		}
+
+		if (Math.abs(dy) <= tolerance) {
+			return headerClass;
+		}
+
+		if (dy < 0) {
+			return 'hide';
+		}
+
+		return 'show';
+	}
+
+	function updateClass(y) {
+		const dy = lastY - y;
+		lastY = y;
+		return deriveClass(y, dy);
+	}
+
+	function setTransitionDuration(node) {
+		node.style.transitionDuration = duration;
+	}
+
+	$: headerClass = updateClass(y);
 </script>
 
-<!-- <svelte:window on:scroll={scroll} /> -->
-<div class={classes}>
-	<Container wide class="hidden lg:block fixed">
-		<div class="navigation h-20  mx-auto justify-between items-stretch w-full px-2">
-			<div class="flex flex-grow items-center pt-4">
-				<div class="flex h-full">
-					<slot name="navLink" />
+<svelte:window bind:scrollY={y} />
+
+<div use:setTransitionDuration class="nav {headerClass}" >
+	<Container wide class="hidden lg:block">
+		<div
+			class="navigation bg-transparent h-[6.25rem] mx-auto flex px-16 3xl:px-2 justify-between items-between w-full" class:nav-scroll={y >= 1}
+		>
+			<div class="flex flex-grow items-center">
+				<slot name="navLink" />
+			</div>
+
+			<div class="flex flex-grow items-center">
+				<!-- <slot name="navLink" /> -->
+			</div>
+			<div class="flex flex-grow items-center justify-end">
+				<div class="w-6 text-dark-text border-dark-text">
+					<IconResume/>
 				</div>
 			</div>
 		</div>
 	</Container>
 </div>
 
-<!-- <slot/> -->
 <style lang="postcss">
 	.navigation {
-		@apply grid;
+		@apply grid transition-all duration-300 ease-in-out;
 		grid-template-columns: minmax(0, 1fr) min-content minmax(0, 1fr);
+	}
+
+	.nav {
+		@apply sticky w-full top-0 z-50 transition-all duration-300 ease-in-out;
+	}
+
+	.nav-scroll {
+		@apply h-[4.25rem] bg-[rgba(237,_237,_237,_0.85)] shadow-[0_10px_30px_-10px_#DFDFDF];
+	}
+	.show {
+		@apply translate-y-0;
+	}
+	.hide {
+		@apply translate-y-[-100%];
 	}
 </style>

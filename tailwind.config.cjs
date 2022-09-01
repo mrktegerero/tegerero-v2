@@ -22,7 +22,8 @@ module.exports = {
 				'1xs': '11px',
 				'1sm': '13px',
 				'1base': '15px',
-				'3.5xl': '2.1rem'
+				'3.5xl': '2.1rem',
+				'5xl': '6.1rem'
 			},
 
       colors: {
@@ -48,6 +49,12 @@ module.exports = {
 				widest: '.2em'
 			},
     },
+		screens: {
+			xxs: '360px',
+			xs: '480px',
+			...defaultTheme.screens,
+			'3xl': '1850px',
+		}
   },
   plugins: [],
 }
