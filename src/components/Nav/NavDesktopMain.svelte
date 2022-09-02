@@ -42,7 +42,7 @@
 <svelte:window bind:scrollY={y} />
 
 <div use:setTransitionDuration class="nav {headerClass}" class:nav-scroll={y >= 1}>
-	<Container wide class="hidden lg:block">
+	<Container wide>
 		<div
 			class="navigation w-full mx-auto flex justify-between bg-transparent h-[6.25rem] px-16 3xl:px-2"
 			class:nav-height={y >= 1}
@@ -70,7 +70,7 @@
 	}
 
 	.nav {
-		@apply sticky w-full top-0 z-50 transition-all duration-300 ease-in-out;
+		@apply sticky top-0 w-full z-50 transition-all duration-300 ease-in-out hidden lg:block;
 	}
 
 	.nav-scroll {

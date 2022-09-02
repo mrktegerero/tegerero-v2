@@ -2,7 +2,7 @@ const { text } = require('stream/consumers');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  content: ['./src/**/*.html', './src/**/*.svelte', './src/**/+page.svelte', './src/**/*.css'],
+	content: ['./src/**/*.html', './src/**/*.svelte', './src/**/+page.svelte', './src/**/*.css'],
   theme: {
     fontWeight: {
 			...defaultTheme.fontWeight
@@ -23,7 +23,9 @@ module.exports = {
 				'1sm': '13px',
 				'1base': '15px',
 				'3.5xl': '2.1rem',
-				'5xl': '6.1rem'
+				'4xl': 'calc(3.1rem + 1.2vw)',
+				'5xl': 'calc(5.35rem + 1.2vw)'
+				
 			},
 
       colors: {

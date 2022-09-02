@@ -6,7 +6,8 @@
 	import Container from '$components/containers/Container.svelte';
 	import Link from '$components/common/Link.svelte';
 	import Spacer from '$components/common/Spacer.svelte';
-import Hero from '$components/hero/Hero.svelte';
+	import Hero from '$components/hero/Hero.svelte';
+	import { fade } from 'svelte/transition';
 
 	const scrollToElement = (selector: string) => {
 		const element = document.querySelector(selector) as HTMLElement;
@@ -58,31 +59,31 @@ import Hero from '$components/hero/Hero.svelte';
 
 <Seo title="Kurt Tegerero" description="Front end developer of @sodadigital" />
 
-<NavDesktopMain duration="350ms" offset={50} tolerance={5}>
+<NavDesktopMain>
 	<svelte:fragment slot="navLink">
 		<NavDesktopLink
-			number="01."	
+			number="01."
 			href="#about"
 			label="About"
 			onClick={() => scrollToElement('#about')}
 			active={firstActive[1]}
 		/>
 		<NavDesktopLink
-			number="02."	
+			number="02."
 			href="#jobs"
 			label="Experience"
 			onClick={() => scrollToElement('#jobs')}
 			active={firstActive[2]}
 		/>
 		<NavDesktopLink
-			number="03."	
+			number="03."
 			href="#projects"
 			label="Work"
 			onClick={() => scrollToElement('#projects')}
 			active={firstActive[3]}
 		/>
 		<NavDesktopLink
-			number="04."	
+			number="04."
 			href="#contact"
 			label="Contact"
 			onClick={() => scrollToElement('#contact')}
@@ -94,8 +95,8 @@ import Hero from '$components/hero/Hero.svelte';
 <!-- <slot/> -->
 
 <Container wide gutters bind:element={elements[0]}>
-	<div class="py-[5rem] lg:mt-[-6.25rem]" >
-		<Hero/>
+	<div class="py-[5rem] lg:mt-[-6.25rem]">
+		<Hero />
 	</div>
 </Container>
 
@@ -115,24 +116,7 @@ import Hero from '$components/hero/Hero.svelte';
 	</div>
 </Container>
 
-
 <Container wide gutters id="jobs" bind:element={elements[2]}>
-	<div  class="py-[30rem]">
-		<Spacer size="sm" />
-		<p class="text-primary font-mono text-base">Hi, my name is</p>
-		<h1 class="text-3.5xl">BODY</h1>
-		<p class="text-muted-text font-medium">
-			I’m a front-end developer specializing in building exceptional User Interface (UI) and User
-			Experience (UX) of web applications <Link
-				newTab
-				href="https://www.sodadigital.com.au/"
-				label="@sodadigital"
-			/>
-		</p>
-	</div>
-</Container>
-
-<Container wide gutters id="projects" bind:element={elements[3]}>
 	<div class="py-[30rem]">
 		<Spacer size="sm" />
 		<p class="text-primary font-mono text-base">Hi, my name is</p>
@@ -148,6 +132,23 @@ import Hero from '$components/hero/Hero.svelte';
 	</div>
 </Container>
 
+<div>
+	<Container wide gutters id="projects" bind:element={elements[3]}>
+		<div class="py-[30rem]">
+			<Spacer size="sm" />
+			<p class="text-primary font-mono text-base">Hi, my name is</p>
+			<h1 class="text-3.5xl">BODY</h1>
+			<p class="text-muted-text font-medium">
+				I’m a front-end developer specializing in building exceptional User Interface (UI) and User
+				Experience (UX) of web applications <Link
+					newTab
+					href="https://www.sodadigital.com.au/"
+					label="@sodadigital"
+				/>
+			</p>
+		</div>
+	</Container>
+</div>
 <Container wide gutters id="contact" bind:element={elements[4]}>
 	<div class="py-[30rem]">
 		<Spacer size="sm" />

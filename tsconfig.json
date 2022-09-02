@@ -27,6 +27,7 @@
 		"baseUrl": ".",
 		"allowJs": true,
 		"checkJs": true,
+		"outDir": "lib",
 		"paths": {
 			"$images": [
 				"src/images"

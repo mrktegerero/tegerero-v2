@@ -16,8 +16,7 @@
   }
 
   body {
-    @apply font-cali text-xl;
-    @apply bg-white-bg text-dark-text;
+    @apply font-cali text-base md:text-lg;
   }
 
   	/* Defaults */
