@@ -15,12 +15,12 @@
   }
 
 	.image-bg-desktop {
-		@apply 3xl:w-[40rem] z-0 relative;
+		@apply 3xl:w-[40rem] relative cursor-pointer;
 		@apply after:content-[''] after:border-[2px] after:border-secondary after:absolute after:left-16 after:top-16 after:w-full after:h-full after:z-0;
-		@apply before:content-[''] before:border-[4px] before:border-primary before:absolute before:left-8 before:top-8 before:w-full before:h-full before:z-0;
+		@apply before:content-[''] before:border-[4px] before:border-primary before:absolute before:hover:translate-x-8 before:hover:translate-y-8 before:w-full before:h-full before:z-20 hover:before:z-0 before:transition-all before:duration-300 before:ease-in-out before:bg-[rgb(227,_174,_34,_.35)] hover:before:bg-transparent;
 	}
 
   .image-desktop {
-    @apply mb-[3rem] relative block ml-[-3rem] mt-[-3rem] z-20 cursor-pointer transition-all duration-300 ease-in-out bg-[rgb(227,_174,_34,_.35)] hover:bg-transparent;
+    @apply mb-[3rem] relative block mt-[-3rem] z-10;
   }
 </style>
