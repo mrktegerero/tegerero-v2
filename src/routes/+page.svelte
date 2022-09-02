@@ -8,6 +8,7 @@
 	import Spacer from '$components/common/Spacer.svelte';
 	import Hero from '$components/hero/Hero.svelte';
 	import { fade } from 'svelte/transition';
+import HeroImage from '$components/hero/HeroImage.svelte';
 
 	const scrollToElement = (selector: string) => {
 		const element = document.querySelector(selector) as HTMLElement;
@@ -53,6 +54,8 @@
 			}
 		}
 	}
+
+	let src = '/src/images/hero/krt2.png';
 </script>
 
 <svelte:window on:scroll={scroll} />
@@ -95,11 +98,13 @@
 <!-- <slot/> -->
 
 <Container wide gutters bind:element={elements[0]}>
-	<div class="py-[5rem] lg:mt-[-6.25rem]">
+	<div class="py-[5rem] pb-40 lg:mt-[-6.25rem]">
 		<Hero />
 	</div>
 </Container>
+<HeroImage img={src} />
 
+<div class="bg-primary 3xl:bg-[linear-gradient(90deg,_#E3AE22_67%,_#222629_33%)]">
 <Container wide gutters id="about" bind:element={elements[1]}>
 	<div class="py-[30rem]">
 		<Spacer size="sm" />
@@ -115,6 +120,7 @@
 		</p>
 	</div>
 </Container>
+</div>
 
 <Container wide gutters id="jobs" bind:element={elements[2]}>
 	<div class="py-[30rem]">

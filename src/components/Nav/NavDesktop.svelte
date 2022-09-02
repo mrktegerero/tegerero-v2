@@ -4,7 +4,6 @@
 	import NavDesktopLink from './NavDesktopLink.svelte';
 	import { getContext, setContext } from 'svelte';
 	import { createUrlStore } from '$lib/url';
-	import defaultImage from '$images/placeholder.jpg?single';
 	export let ssrUrl = '';
 
 	setContext('APP', { url: createUrlStore(ssrUrl) });

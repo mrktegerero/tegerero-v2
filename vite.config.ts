@@ -1,4 +1,5 @@
-import { sveltekit } from '@sveltejs/kit/vite';
+// import { sveltekit } from '@sveltejs/kit/vite';
+import {sveltekit} from '@sveltejs/kit/vite'
 import { execSync } from 'node:child_process';
 // import image2 from './image2.js';
 import tailwindConfig from './tailwindConfigPlugin.js';

@@ -42,9 +42,8 @@
 <svelte:window bind:scrollY={y} />
 
 <div use:setTransitionDuration class="nav {headerClass}" class:nav-scroll={y >= 1}>
-	<Container wide>
 		<div
-			class="navigation w-full mx-auto flex justify-between bg-transparent h-[6.25rem] px-16 3xl:px-2"
+			class="navigation w-full mx-auto flex justify-between bg-transparent h-[6.25rem]"
 			class:nav-height={y >= 1}
 		>
 			<div class="flex flex-grow items-center">
@@ -60,7 +59,6 @@
 				</div>
 			</div>
 		</div>
-	</Container>
 </div>
 
 <style lang="postcss">
@@ -70,7 +68,7 @@
 	}
 
 	.nav {
-		@apply sticky top-0 w-full z-50 transition-all duration-300 ease-in-out hidden lg:block;
+		@apply sticky top-0 w-full z-50 transition-all duration-300 ease-in-out hidden lg:block lg:px-20;
 	}
 
 	.nav-scroll {
