@@ -15,13 +15,13 @@
 		<Spacer size="lg" />
 		<Spacer size="lg" />
 		<div
-			class="relative block after:content-[''] after:h-[30rem] after:w-[15rem] after:bg-primary after:absolute after:top-0 after:left-5 after:z-[-1] py-10"
+			class="relative block after:content-[''] after:h-[30rem] after:w-[15rem] after:bg-dark-bg after:absolute after:top-0 after:left-9 after:z-[-1] py-10"
 		>
-			<HeroTitle label="Front" class="pl-6" />
-			<HeroTitle label="End" class="pl-14" />
+			<HeroTitle label="Front" class="pl-4" />
+			<HeroTitle label="End" class="pl-12 md:pl-20" />
 			<HeroTitle label="Developer." />
 		</div>
-		<div class=" pt-48 md:pt-52">
+		<div class="pt-20 md:pt-52">
 			<HeroText large
 				>A day without developing is like... just kidding I have no idea. I just create things
 				everyday for the web <Link

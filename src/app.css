@@ -16,7 +16,7 @@
   }
 
   body {
-    @apply font-cali text-base md:text-lg;
+    @apply font-cali text-base md:text-lg bg-[#1B1C1C] text-light-text scrollbar;
   }
 
   	/* Defaults */
@@ -36,5 +36,52 @@
 	} 
 	h4 {
 		@apply text-xl;
+	}
+	.no-scrollbar::-webkit-scrollbar {
+		background: unset;
+		width: unset;
+	}
+	.no-scrollbar::-webkit-scrollbar-track {
+		background: unset;
+		border-radius: unset;
+		border: unset;
+
+		background-clip: unset;
+	}
+	.no-scrollbar::-webkit-scrollbar-thumb {
+		background: unset;
+		border-radius: unset;
+		border: unset;
+
+		background-clip: unset;
+	}
+
+	.no-scrollbar::-webkit-scrollbar-thumb:hover {
+		border: unset;
+	}
+
+	.scrollbar::-webkit-scrollbar {
+		@apply bg-transparent transition-all duration-200 opacity-100 !w-3 ;
+	}
+	.scrollbar::-webkit-scrollbar-track {
+		@apply !bg-transparent !rounded-full;
+		border: 0.25rem solid rgba(255, 255, 0, 0);
+		background-clip: padding-box;
+		display: none;
+	}
+	.scrollbar:hover::-webkit-scrollbar-track {
+		display: unset;
+	}
+	.scrollbar::-webkit-scrollbar-thumb {
+		@apply !rounded-full !bg-dark-bg;
+		border: 0.25rem solid rgba(255, 255, 0, 0);
+		background-clip: padding-box;
+	}
+	.scrollbar:hover::-webkit-scrollbar-thumb {
+		display: unset;
+	}
+
+	.scrollbar::-webkit-scrollbar-thumb:hover {
+		border: 0.2rem solid rgba(255, 255, 0, 0);
 	}
 }

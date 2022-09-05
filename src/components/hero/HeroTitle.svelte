@@ -13,6 +13,6 @@
 
 <style lang="postcss">
 	.title {
-		@apply text-4xl sm:text-5xl leading-[3.5rem] sm:leading-[5.8rem] block relative;
+		@apply text-[3.8rem] sm:text-5xl leading-[3.5rem] sm:leading-[6.8rem] block relative text-primary;
 	}
 </style>

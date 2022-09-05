@@ -5,6 +5,7 @@
 	export let description = '';
 	export let image: string = undefined;
 	export let alt = '';
+	let icon = '/src/images/KT-icon.png';
 </script>
 
 <svelte:head>
@@ -41,5 +42,5 @@
 	<meta property="og:url" content={$page.url.toString()} />
 	<link rel="canonical" href={$page.url.toString()} />
 
-	<!-- <link rel="icon" type="image/png" sizes="32x32" href={icon} /> -->
+	<link rel="icon" type="image/png" sizes="32x32" href={icon} />
 </svelte:head>

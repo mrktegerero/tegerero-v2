@@ -3,15 +3,15 @@
   export let small: boolean = false;
 </script>
 
-<p class:large class:small><slot/></p>
+<p class:large class:small class="text-light-text"><slot/></p>
 
 
 <style lang="postcss">
 .small {
-  @apply text-muted-text font-medium leading-6;
+  @apply font-medium leading-6 text-primary;
 }
 
   .large {
-    @apply text-[22px] font-medium text-muted-text;
+    @apply text-[22px] font-medium;
   }
 </style>

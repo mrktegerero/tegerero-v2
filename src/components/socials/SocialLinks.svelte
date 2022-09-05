@@ -7,6 +7,6 @@
 
 <style lang="postcss">
 	.links {
-		@apply w-[22px] my-3 transition-all duration-200 hover:text-muted-text hover:translate-y-[-3px];
+		@apply w-[22px] my-4 transition-all duration-200 hover:text-muted-text hover:translate-y-[-3px];
 	}
 </style>
