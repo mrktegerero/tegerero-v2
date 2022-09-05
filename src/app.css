@@ -16,7 +16,7 @@
   }
 
   body {
-    @apply font-cali text-base md:text-lg bg-[#1B1C1C] text-light-text scrollbar;
+    @apply font-cali text-base md:text-lg bg-[#1B1C1C] text-light-text scrollbar selection:bg-[rgb(227,_174,_34,_.35)];
   }
 
   	/* Defaults */

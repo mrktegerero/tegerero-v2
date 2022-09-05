@@ -80,7 +80,7 @@
 	}
 
 	.nav {
-		@apply sticky top-0 w-full z-50 transition-all duration-300 ease-in-out hidden lg:block lg:px-20;
+		@apply sticky top-0 w-full z-50 transition-all duration-300 ease-in-out hidden lg:block lg:px-14;
 	}
 
 	.nav-scroll {
