@@ -38,6 +38,7 @@ module.exports = {
 				'darker-bg': '#25262A',
 				'muted-dark-bg': '#333438',
 				'dark-text': '#0B0B0B',
+				'mute-text': '#656565',
         'muted-text': '#8B8C90',
         'light-text': '#FFFFFF',
 

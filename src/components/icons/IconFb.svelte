@@ -2,11 +2,9 @@
 	xmlns="http://www.w3.org/2000/svg"
 	stroke-width="2"
 	viewBox="0 0 24 24"
-	fill="none"
+	fill="currentColor"
 	stroke="currentColor"
 	stroke-linecap="round"
 	stroke-linejoin="round"
-	><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5z" /><path
-		d="M11 21v-9c0-2.188.5-4 4-4M9 13h6"
-	/></svg
+	><path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"/></svg
 >

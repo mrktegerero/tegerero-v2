@@ -55,7 +55,7 @@
 		}
 	}
 
-	let src = '/src/images/hero/krt2.png';
+	let src = '/src/images/hero/krt.png';
 </script>
 
 <svelte:window on:scroll={scroll} />
@@ -94,7 +94,7 @@
 <!-- <slot/> -->
 
 <Container wide gutters bind:element={elements[0]}>
-	<div class="py-[5rem] pb-20 lg:mt-[-6.25rem]">
+	<div class="py-[5rem] pb-20 lg:mt-[-6.25rem] relative">
 		<Hero />
 	</div>
 </Container>

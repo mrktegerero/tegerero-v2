@@ -11,11 +11,11 @@ import Text from '$components/common/Text.svelte';
 	import HeroText from './HeroText.svelte';
 	import HeroTitle from './HeroTitle.svelte';
 	// import imgPlinth from '$src/images/hero/';
-	let src = '/src/images/hero/krt2.png';
+	let src = '/src/images/hero/krt.png';
 </script>
 
 <div class="grid lg:grid-cols-2">
-	<div class="z-4">
+	<div class="z-50">
 		<div class="3xl:pl-32">
 			<Spacer size="lg" />
 			<Spacer size="lg" />

@@ -15,10 +15,10 @@
 {#if $url.pathname !== '/' && $url.pathname === '/work'}
 	<NavDesktopMain>
 		<svelte:fragment slot="navLink">
-			<NavDesktopLink number="01." href="/#about" label="About" />
-			<NavDesktopLink number="02." href="/#jobs" label="Experience" />
-			<NavDesktopLink number="03." href="/#projects" label="Work" />
-			<NavDesktopLink number="04." href="/#contact" label="Contact" />
+			<NavDesktopLink href="/#about" label="About" />
+			<NavDesktopLink href="/#jobs" label="Experience" />
+			<NavDesktopLink href="/#projects" label="Work" />
+			<NavDesktopLink href="/#contact" label="Contact" />
 		</svelte:fragment>
 	</NavDesktopMain>
 {/if}

@@ -19,6 +19,10 @@
     @apply font-cali text-base md:text-lg bg-dark-bg text-light-text scrollbar selection:bg-[rgb(227,_174,_34,_.35)];
   }
 
+	ul, ol, li {
+		@apply list-none m-0 p-0;
+	}
+
   	/* Defaults */
 
 	h1, h2, h3, h4, h5, h5 {

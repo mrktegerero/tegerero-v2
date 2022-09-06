@@ -3,15 +3,17 @@
 	export let label: string = '';
 	export let newTab: boolean = false;
 	export let large: boolean = false;
-
+	export let largeHeight: boolean = false;
 	let classes: string = '';
 	export { classes as class };
 </script>
 
 {#if newTab}
-	<a class="link {classes}" target="_blank" {href}> {label}</a>
+	<a class="link {classes}" class:large class:large-height={largeHeight} target="_blank" {href}>
+		{label}</a
+	>
 {:else}
-	<a class="link {classes}" class:large={large} {href}> {label}</a>
+	<a class="link {classes}" class:large class:large-height={largeHeight} {href}> {label}</a>
 {/if}
 
 <style lang="postcss">
@@ -23,5 +25,9 @@
 
 	.large {
 		@apply after:bottom-1.5 after:h-0.5;
+	}
+
+	.large-height {
+		@apply after:h-0.5;
 	}
 </style>

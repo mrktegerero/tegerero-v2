@@ -59,7 +59,7 @@
 						class="text-base mt-1  font-semibold opacity-100 transition-all duration-300 delay-300 ease-in-out "
 						class:hide-text={y >= 1}
 					>
-						urt Tegerero
+						urt <span class="text-[#B2B2B3] font-normal">Tegerero</span>
 					</h5>
 				</div></a
 			>
