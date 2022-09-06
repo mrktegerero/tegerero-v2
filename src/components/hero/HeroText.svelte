@@ -8,10 +8,10 @@
 
 <style lang="postcss">
 .small {
-  @apply font-medium leading-6 text-primary;
+  @apply leading-6 text-muted-text font-semibold text-base font-mono;
 }
 
-  .large {
-    @apply text-[22px] font-medium;
-  }
+.large {
+  @apply text-[3.6rem] leading-[5rem] font-mono;
+}
 </style>

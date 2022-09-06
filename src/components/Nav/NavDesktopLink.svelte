@@ -12,13 +12,14 @@
 
 <style lang="postcss">
 	.link {
-		@apply text-light-text leading-7 text-sm font-mono mr-7 last:mr-0 relative block flex;
-		/* @apply after:content-[''] after:absolute after:leading-7 after:w-full after:scale-x-0 after:h-[3px] after:bottom-0 after:left-0 after:right-0 after:bg-primary after:transition-all after:duration-300 after:ease-out; */
-		@apply after:content-[''] after:absolute after:top-0.5 after:right-[0.2rem] after:w-4 after:h-6 after:bg-[rgb(227,_174,_34,_.35)] after:opacity-0 after:transition-all after:duration-300 after:ease-out hover:after:right-[-0.5rem] hover:after:opacity-100;
-		/* @apply hover:after:scale-x-[1]; */
+		@apply text-light-text leading-7 text-[13px] font-mono mr-12 last:mr-0 relative block flex hover:text-primary;
+		@apply before:content-['<'] before:absolute before:left-[0.4rem] before:opacity-0 before:transition-all before:duration-300 before:ease-out hover:before:left-[-0.8rem] hover:before:opacity-100;
+		@apply after:content-['>'] after:absolute after:right-[0.2rem] after:opacity-0 after:transition-all after:duration-300 after:ease-out hover:after:right-[-1rem] hover:after:opacity-100;
 	}
 
 	.active {
-		@apply after:scale-x-[1] after:right-[-0.5rem] after:opacity-100;
+		@apply text-primary;
+		@apply before:scale-x-[1] before:left-[-0.5rem] before:opacity-100;
+		@apply after:scale-x-[1] after:right-[-0.7rem] after:opacity-100;
 	}
 </style>

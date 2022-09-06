@@ -3,7 +3,11 @@
 	import Link from '$components/common/Link.svelte';
 
 	import Spacer from '$components/common/Spacer.svelte';
+import Text from '$components/common/Text.svelte';
 	import HeroImage from './HeroImage.svelte';
+	import HeroNumber from './HeroNumber.svelte';
+	import HeroNumbers from './HeroNumbers.svelte';
+	import HeroNumberText from './HeroNumberText.svelte';
 	import HeroText from './HeroText.svelte';
 	import HeroTitle from './HeroTitle.svelte';
 	// import imgPlinth from '$src/images/hero/';
@@ -12,33 +16,40 @@
 
 <div class="grid lg:grid-cols-2">
 	<div class="z-4">
-		<Spacer size="lg" />
-		<Spacer size="lg" />
-		<div
-			class="relative block after:content-[''] after:h-[30rem] after:w-[15rem] after:bg-dark-bg after:absolute after:top-0 after:left-9 after:z-[-1] py-10"
-		>
-			<HeroTitle label="Front" class="pl-4" />
-			<HeroTitle label="End" class="pl-12 md:pl-20" />
-			<HeroTitle label="Developer." />
+		<div class="3xl:pl-32">
+			<Spacer size="lg" />
+			<Spacer size="lg" />
+			<Spacer size="sm" />
+			<div class="relative">
+				<HeroTitle label="Front-end Developer" />
+			</div>
+			<div class="pt-20">
+				<Text large>'Talk is cheap.</Text>
+				<Text large>Show me the code'</Text>
+			</div>
+			<div class="pt-12">
+				<Text small>I build exceptional UI and UX of web applications,</Text>
+				<Text small>and I love what I do.</Text>
+			</div>
+			<div class="pt-20">
+				<Link
+					href="mailto:kurtrendel@gmail.com"
+					label="Let's Chat!"
+					class="uppercase text-[1.7rem] font-bold"
+					large
+				/>
+			</div>
 		</div>
-		<div class="pt-20 md:pt-52">
-			<HeroText large
-				>A day without developing is like... just kidding I have no idea. I just create things
-				everyday for the web <Link
-					newTab
-					href="https://www.sodadigital.com.au/"
-					label="@sodadigital"
-				/>.</HeroText
-			>
-		</div>
-		<div class="pt-20 grid grid-cols-2 gap-4 md:pr-40 lg:pr-0 xl:pr-40">
-			<HeroText small
-				>Highly skilled at progressive enhancement, design systems & UI Engineering.</HeroText
-			>
-			<HeroText small
-				>Over a year of experience building products for clients across several countries.</HeroText
-			>
-		</div>
+		<HeroNumber>
+			<HeroNumbers number="1.5">
+				<HeroNumberText label="Years" />
+				<HeroNumberText label="Experience" />
+			</HeroNumbers>
+			<HeroNumbers number="11">
+				<HeroNumberText label="Projects Completed" />
+				<HeroNumberText label="in my career " />
+			</HeroNumbers>
+		</HeroNumber>
 	</div>
 	<HeroImage desktop img={src} />
 </div>

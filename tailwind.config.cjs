@@ -29,15 +29,17 @@ module.exports = {
 			},
 
       colors: {
-        primary: '#E3AE22',
+        primary: '#64F4AC',
         'primary-dark': '#D0A211',
         secondary: '#25554F',
         // dark-text: ,
 				'white-bg': '#EDEDED',
-        'dark-bg': '#222629',
+        'dark-bg': '#2D2E32',
+				'darker-bg': '#25262A',
+				'muted-dark-bg': '#333438',
 				'dark-text': '#0B0B0B',
-        'muted-text': '#353539',
-        'light-text': '#FEFEFE',
+        'muted-text': '#8B8C90',
+        'light-text': '#FFFFFF',
 
       },
 

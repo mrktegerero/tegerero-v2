@@ -8,7 +8,7 @@
 	import Spacer from '$components/common/Spacer.svelte';
 	import Hero from '$components/hero/Hero.svelte';
 	import { fade } from 'svelte/transition';
-import HeroImage from '$components/hero/HeroImage.svelte';
+	import HeroImage from '$components/hero/HeroImage.svelte';
 
 	const scrollToElement = (selector: string) => {
 		const element = document.querySelector(selector) as HTMLElement;
@@ -65,28 +65,24 @@ import HeroImage from '$components/hero/HeroImage.svelte';
 <NavDesktopMain>
 	<svelte:fragment slot="navLink">
 		<NavDesktopLink
-			number="01."
 			href="#about"
 			label="About"
 			onClick={() => scrollToElement('#about')}
 			active={firstActive[1]}
 		/>
 		<NavDesktopLink
-			number="02."
 			href="#jobs"
 			label="Experience"
 			onClick={() => scrollToElement('#jobs')}
 			active={firstActive[2]}
 		/>
 		<NavDesktopLink
-			number="03."
 			href="#projects"
 			label="Work"
 			onClick={() => scrollToElement('#projects')}
 			active={firstActive[3]}
 		/>
 		<NavDesktopLink
-			number="04."
 			href="#contact"
 			label="Contact"
 			onClick={() => scrollToElement('#contact')}
@@ -98,28 +94,28 @@ import HeroImage from '$components/hero/HeroImage.svelte';
 <!-- <slot/> -->
 
 <Container wide gutters bind:element={elements[0]}>
-	<div class="py-[5rem] pb-40 lg:mt-[-6.25rem]">
+	<div class="py-[5rem] pb-20 lg:mt-[-6.25rem]">
 		<Hero />
 	</div>
 </Container>
 <HeroImage img={src} />
 
-<div class="bg-primary 3xl:bg-[linear-gradient(90deg,_#E3AE22_67%,_#222629_33%)]">
-<Container wide gutters id="about" bind:element={elements[1]}>
-	<div class="py-[30rem]">
-		<Spacer size="sm" />
-		<p class="text-primary font-mono text-base">Hi, my name is</p>
-		<h1 class="text-3.5xl">KURT TEGERERO</h1>
-		<p class="text-muted-text font-medium">
-			I’m a front-end developer specializing in building exceptional User Interface (UI) and User
-			Experience (UX) of web applications <Link
-				newTab
-				href="https://www.sodadigital.com.au/"
-				label="@sodadigital"
-			/>
-		</p>
-	</div>
-</Container>
+<div class="bg-[#25262A] 3xl:bg-[#25262A]">
+	<Container wide gutters id="about" bind:element={elements[1]}>
+		<div class="py-[30rem]">
+			<Spacer size="sm" />
+			<p class="text-primary font-mono text-base">Hi, my name is</p>
+			<h1 class="text-3.5xl">KURT TEGERERO</h1>
+			<p class="text-muted-text font-medium">
+				I’m a front-end developer specializing in building exceptional User Interface (UI) and User
+				Experience (UX) of web applications <Link
+					newTab
+					href="https://www.sodadigital.com.au/"
+					label="@sodadigital"
+				/>
+			</p>
+		</div>
+	</Container>
 </div>
 
 <Container wide gutters id="jobs" bind:element={elements[2]}>

@@ -1,6 +1,10 @@
 <script lang="ts">
 	import Container from '$components/containers/Container.svelte';
+	import IconGithub from '$components/icons/IconGithub.svelte';
 	import IconResume from '$components/icons/IconResume.svelte';
+	import IconTwitter from '$components/icons/IconTwitter.svelte';
+	import NavDesktopIcon from './NavDesktopIcon.svelte';
+	import NavDesktopIconMain from './NavDesktopIconMain.svelte';
 
 	export let duration: string = '1000ms';
 	export let offset: number = 0;
@@ -65,17 +69,22 @@
 		</div>
 
 		<div class="flex flex-row items-center justify-end">
-			<div class="text-dark-text border-dark-text">
-				<!-- <IconResume /> -->
-				<a href={resume} target="_blank" class="border border-primary py-2 px-3 rounded text-light-text transition-all duration-300 ease-in-out hover:bg-[rgb(227,_174,_34,_.35)]">Resume</a>
-			</div>
+			<NavDesktopIconMain
+				><NavDesktopIcon href="https://twitter.com/mr_ktegerero" label="Twitter"
+					><IconTwitter /></NavDesktopIcon
+				>
+				<NavDesktopIcon href="https://github.com/mrktegerero" label="Github"
+					><IconGithub /></NavDesktopIcon
+				></NavDesktopIconMain
+			>
+			<a data-tooltip="Check my resume!" href={resume} target="_blank" class="bg-muted-dark-bg p-3 rounded-full relative"><div class="w-6 text-primary"><IconResume/></div></a>
 		</div>
 	</div>
 </div>
 
 <style lang="postcss">
 	.navigation {
-		@apply grid transition-all duration-300 ease-in-out grid-cols-[minmax(0,_1fr)_min-content_minmax(0,_1fr)] xl:grid-cols-[minmax(0,_1fr)_min-content_minmax(0,_2fr)];
+		@apply grid transition-all duration-300 ease-in-out grid-cols-[minmax(0,_1fr)_min-content_minmax(0,_1fr)] xl:grid-cols-[minmax(0,_1fr)_min-content_minmax(0,_1fr)];
 		/* grid-template-columns: minmax(0, 1fr) min-content minmax(0, 2fr); */
 	}
 
@@ -84,7 +93,7 @@
 	}
 
 	.nav-scroll {
-		@apply h-[4.25rem] bg-[rgba(27,_28,_28,_0.85)] shadow-[0_10px_30px_-10px_#1B1C1C];
+		@apply h-[4.25rem] bg-[rgba(45,_46,_50,_0.85)] shadow-[0_10px_30px_-10px_#25262A];
 	}
 
 	.nav-height {
