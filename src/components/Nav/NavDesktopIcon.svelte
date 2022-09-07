@@ -7,7 +7,7 @@
 
 <style lang="postcss">
 	.links {
-		@apply mx-4 last:mr-14;
+		@apply mx-5 last:mr-14;
 	}
   .icon {
     @apply w-[15px] mr-2 text-light-text transition-all duration-300 group-hover:text-primary;

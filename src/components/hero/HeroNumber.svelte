@@ -4,6 +4,6 @@
 
 <style lang="postcss">
   .number{
-    @apply flex pt-44;
+    @apply flex ;
   }
 </style>

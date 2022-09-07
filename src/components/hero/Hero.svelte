@@ -40,6 +40,8 @@ import Text from '$components/common/Text.svelte';
 				/>
 			</div>
 		</div>
+		<Spacer size="lg" />
+		<Spacer size="lg" />
 		<HeroNumber>
 			<HeroNumbers number="1.5">
 				<HeroNumberText label="Years" />

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Text from '$components/common/Text.svelte';
 	import Seo from '$components/common/SEO.svelte';
 	import NavDesktopMain from '$components/Nav/NavDesktopMain.svelte';
 	import NavDesktopLink from '$components/Nav/NavDesktopLink.svelte';
@@ -9,6 +10,9 @@
 	import Hero from '$components/hero/Hero.svelte';
 	import { fade } from 'svelte/transition';
 	import HeroImage from '$components/hero/HeroImage.svelte';
+import ProjectCard from '$components/cards/ProjectCard.svelte';
+import Tag from '$components/common/Tag.svelte';
+import Grid from '$components/common/Grid.svelte';
 
 	const scrollToElement = (selector: string) => {
 		const element = document.querySelector(selector) as HTMLElement;
@@ -56,6 +60,9 @@
 	}
 
 	let src = '/src/images/hero/krt.png';
+	let mansion = '/src/images/projects/mansion88.png';
+	let yre = '/src/images/projects/yre.png';
+	let tier1 = '/src/images/projects/tier1.png';
 </script>
 
 <svelte:window on:scroll={scroll} />
@@ -100,7 +107,7 @@
 </Container>
 <HeroImage img={src} />
 
-<div class="bg-[#25262A] 3xl:bg-[#25262A]">
+<div class="bg-[#25262A]">
 	<Container wide gutters id="about" bind:element={elements[1]}>
 		<div class="py-[30rem]">
 			<Spacer size="sm" />
@@ -134,23 +141,63 @@
 	</div>
 </Container>
 
-<div>
+<div class="bg-[#25262A]">
 	<Container wide gutters id="projects" bind:element={elements[3]}>
-		<div class="py-[30rem]">
-			<Spacer size="sm" />
-			<p class="text-primary font-mono text-base">Hi, my name is</p>
-			<h1 class="text-3.5xl">BODY</h1>
-			<p class="text-muted-text font-medium">
-				I’m a front-end developer specializing in building exceptional User Interface (UI) and User
-				Experience (UX) of web applications <Link
-					newTab
-					href="https://www.sodadigital.com.au/"
-					label="@sodadigital"
-				/>
-			</p>
-		</div>
+		<Spacer size="lg" />
+		<Spacer size="sm" />
+		<Grid hide>
+			<svelte:fragment slot="grid-left">
+				<Spacer size="sm" />
+				<Text class="text-[2.5rem] leading-[3.5rem] xl:pl-32">Letest Works</Text>
+				<Text class="text-muted-text text-sm xl:pl-32">Perfect solutions for digital experience</Text>
+				<Spacer size="lg" />
+				<Spacer size="lg" />
+				<ProjectCard title="Mansion 88" src={mansion} class="bg-[#191C2F]" right>
+					<svelte:fragment slot="tags">
+						<Tag label="HTML"/>
+						<Tag label="Javascript"/>
+						<Tag label="CSS"/>
+					</svelte:fragment>
+				</ProjectCard>
+				<ProjectCard hideDesktop title="YRE Travel" src={yre} class="bg-[#171616] mt-20" left primary>
+					<svelte:fragment slot="tags">
+						<Tag label="HTML"/>
+						<Tag label="GatsbyJs"/>
+						<Tag label="GraphQL"/>
+					</svelte:fragment>
+				</ProjectCard>
+				<ProjectCard hideDesktop title="Tier One" src={tier1} class="bg-[#080808] mt-20">
+					<svelte:fragment slot="tags">
+						<Tag label="HTML"/>
+						<Tag label="Javascript"/>
+						<Tag label="CSS"/>
+					</svelte:fragment>
+				</ProjectCard>
+				<Link label="ALL PROJECTS"/>
+			</svelte:fragment>
+			<svelte:fragment slot="grid-right">
+				<ProjectCard title="YRE Travel" src={yre} class="bg-[#171616]" left primary>
+					<svelte:fragment slot="tags">
+						<Tag label="HTML"/>
+						<Tag label="GatsbyJs"/>
+						<Tag label="GraphQL"/>
+					</svelte:fragment>
+				</ProjectCard>
+				<Spacer size="lg" />
+				<Spacer size="md" />
+				<ProjectCard title="Tier One" src={tier1} class="bg-[#080808]">
+					<svelte:fragment slot="tags">
+						<Tag label="HTML"/>
+						<Tag label="Javascript"/>
+						<Tag label="CSS"/>
+					</svelte:fragment>
+				</ProjectCard>
+			</svelte:fragment>
+		</Grid>
+		<Spacer size="lg" />
 	</Container>
 </div>
+
 <Container wide gutters id="contact" bind:element={elements[4]}>
 	<div class="py-[30rem]">
 		<Spacer size="sm" />

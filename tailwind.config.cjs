@@ -34,6 +34,7 @@ module.exports = {
         secondary: '#25554F',
         // dark-text: ,
 				'white-bg': '#EDEDED',
+				'mute-bg': '#4D4E52',
         'dark-bg': '#2D2E32',
 				'darker-bg': '#25262A',
 				'muted-dark-bg': '#333438',
