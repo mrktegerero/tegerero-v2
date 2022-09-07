@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Container from '$components/containers/Container.svelte';
 	import IconGithub from '$components/icons/IconGithub.svelte';
 	import IconResume from '$components/icons/IconResume.svelte';
 	import IconTwitter from '$components/icons/IconTwitter.svelte';
@@ -56,7 +55,7 @@
 				</div>
 				<div>
 					<h5
-						class="text-base mt-1  font-semibold opacity-100 transition-all duration-300 delay-300 ease-in-out "
+						class="text-base mt-1 font-semibold opacity-100 transition-all duration-300 delay-300 ease-in-out "
 						class:hide-text={y >= 1}
 					>
 						urt <span class="text-[#B2B2B3] font-normal">Tegerero</span>
@@ -77,14 +76,20 @@
 					><IconGithub /></NavDesktopIcon
 				></NavDesktopIconMain
 			>
-			<a data-tooltip="Check my resume!" href={resume} target="_blank" class="bg-muted-dark-bg p-3 rounded-full relative"><div class="w-6 text-primary"><IconResume/></div></a>
+			<a
+				data-tooltip="Check my resume!"
+				href={resume}
+				target="_blank"
+				class="bg-muted-dark-bg p-3 rounded-full relative"
+				><div class="w-6 text-primary"><IconResume /></div></a
+			>
 		</div>
 	</div>
 </div>
 
 <style lang="postcss">
 	.navigation {
-		@apply grid transition-all duration-300 ease-in-out grid-cols-[minmax(0,_1fr)_min-content_minmax(0,_1fr)] xl:grid-cols-[minmax(0,_1fr)_min-content_minmax(0,_1fr)];
+		@apply grid transition-all duration-300 ease-in-out grid-cols-[minmax(0,_1fr)_min-content_minmax(0,_1fr)] xl:grid-cols-[minmax(0,_1fr)_min-content_minmax(0,_3fr)];
 		/* grid-template-columns: minmax(0, 1fr) min-content minmax(0, 2fr); */
 	}
 

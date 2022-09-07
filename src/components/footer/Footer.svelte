@@ -15,9 +15,9 @@
 
 	let icon = '/src/images/KT-icon.png';
 
-  let now = new Date();
+	let now = new Date();
 
-  let year = now.getFullYear();
+	let year = now.getFullYear();
 </script>
 
 <FooterMain>
@@ -64,18 +64,22 @@
 							</h5>
 						</div></a
 					>
-          <div class="pl-5 flex items-center">
-            <Text class="text-mute-text text-sm font-bold flex items-center"><span class="pr-2">&copy;</span> {year}. All rights Reserved</Text>
-          </div>
+					<div class="pl-5 flex items-center">
+						<Text class="text-mute-text text-sm font-bold flex items-center"
+							><span class="pr-2">&copy;</span> {year}. All rights Reserved</Text
+						>
+					</div>
 				</div>
 			</div>
 			<div class="col-span-12 lg:col-span-6 lg:pl-20 3xl:pl-40">
 				<div class="flex">
-					<FooterSocials href=""><IconTwitter /></FooterSocials><FooterSocials href=""
-						><IconGithub /></FooterSocials
-					><FooterSocials href=""><IconFb /></FooterSocials><FooterSocials href=""
-						><IconIg /></FooterSocials
-					><FooterSocials href=""><IconLinkedIn /></FooterSocials>
+					<FooterSocials href="https://twitter.com/mr_ktegerero"><IconTwitter /></FooterSocials
+					><FooterSocials href="https://github.com/mrktegerero"><IconGithub /></FooterSocials
+					><FooterSocials href="https://www.facebook.com/mr.ktegerero/"><IconFb /></FooterSocials
+					><FooterSocials href="https://www.instagram.com/mr_ktegerero/"><IconIg /></FooterSocials
+					><FooterSocials href="https://www.linkedin.com/in/kurt-tegerero-646968209/"
+						><IconLinkedIn /></FooterSocials
+					>
 				</div>
 			</div>
 		</div>
