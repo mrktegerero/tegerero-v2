@@ -223,7 +223,7 @@
 		<svelte:fragment slot="grid-right">
 			<div class="flex items-stretch h-full w-full">
 				<Text class="text-mute-text text-sm xl:pl-32 self-end pb-3"
-					>Where I spend my working years</Text
+					>Companies that I once working with made me who I am</Text
 				>
 			</div>
 		</svelte:fragment>
@@ -238,10 +238,13 @@
 			<Spacer size="sm" />
 			<Text class="text-mute-text pt-3 xl:pl-32"
 				><span class="text-muted-text">▶</span> Developed and maintained code for in-house and client
-				websites primarily using <span class="text-light-text">Svelte</span>, <span class="text-light-text">SvelteKit</span>, <span class="text-light-text">Shopify API</span>, <span class="text-light-text">Asp.Net</span>, <span class="text-light-text">React</span>, <span class="text-light-text">Typescript</span>, <span class="text-light-text">Umbraco</span>, <span class="text-light-text">Bootstrap</span> and <span class="text-light-text">Tailwind.</Text
+				websites primarily using <span class="text-light-text">Svelte</span>, <span class="text-light-text">SvelteKit</span>, <span class="text-light-text">Shopify API</span>, <span class="text-light-text">Asp.Net</span>, <span class="text-light-text">React</span>, <span class="text-light-text">Typescript</span>, <span class="text-light-text">Umbraco</span>, <span class="text-light-text">Bootstrap</span> and <span class="text-light-text">Tailwind</span>.</Text
 			>
 			<Text class="text-mute-text pt-3 xl:pl-32"
 				><span class="text-muted-text">▶</span> Tested site <span class="text-light-text">compatibility</span> across multiple browsers and devices, uncovering anf debugging issues and addressing inconsistencies.</Text
+			>
+			<Text class="text-mute-text pt-3 xl:pl-32"
+				><span class="text-muted-text">▶</span> Debug errors, troubleshoot issues, and perform routine performance <span class="text-light-text">optimizations</span>.</Text
 			>
 		</svelte:fragment>
 	</Grid>
@@ -264,7 +267,26 @@
 			>
 			<Text class="text-mute-text pt-3 xl:pl-32"
 				><span class="text-muted-text">▶</span> Standardized all output with a new,
-				<span class="text-light-text">responsive</span>, mobile-first approach and strategy</Text
+				<span class="text-light-text">responsive</span>, mobile-first approach and strategy.</Text
+			>
+		</svelte:fragment>
+	</Grid>
+	<Spacer size="lg" />
+	<Grid gridQuarter>
+		<svelte:fragment slot="grid-left">
+			<Text class="text-sm text-white-bg">2021</Text>
+		</svelte:fragment>
+		<svelte:fragment slot="grid-right">
+			<Text class="text-sm xl:pl-32">Front-end Developer Associate <Link href="https://www.chimesconsulting.com/" label="@Chimes Consulting" newTab/></Text>
+			<Spacer size="sm" />
+			<Text class="text-mute-text pt-3 xl:pl-32"
+				><span class="text-muted-text">▶</span> Created <span class="text-light-text">mockup</span> designs for web application and mobile app.</Text
+			>
+			<Text class="text-mute-text pt-3 xl:pl-32"
+				><span class="text-muted-text">▶</span> Build Chimes Consulting HR System with <span class="text-light-text">HTML</span>, <span class="text-light-text">PHP</span> , <span class="text-light-text">CSS</span> and <span class="text-light-text">JavaScript</span>.</Text
+			>
+			<Text class="text-mute-text pt-3 xl:pl-32"
+				><span class="text-muted-text">▶</span> <span class="text-light-text">Collaborated</span> with product team members to implement new feature developments.</Text
 			>
 		</svelte:fragment>
 	</Grid>
