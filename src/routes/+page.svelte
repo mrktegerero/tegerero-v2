@@ -173,7 +173,12 @@ import Grid from '$components/common/Grid.svelte';
 						<Tag label="CSS"/>
 					</svelte:fragment>
 				</ProjectCard>
-				<Link label="ALL PROJECTS"/>
+				<Spacer size="lg" />
+				<Spacer size="lg" />
+				<Link label="ALL PROJECTS" href="/work" class="uppercase text-[1.7rem] font-bold xl:ml-32" large/>
+				<Spacer size="lg" />
+				<Spacer size="sm" />
+				<Text class="text-muted-text text-sm xl:pl-32 md:pr-12 lg:pr-0 xl:w-[31rem]">* Some projects not allow publish by NDA, if you want to see more. <Link label="contact" href="mailto:kurtrendel@gmail.com"/></Text>
 			</svelte:fragment>
 			<svelte:fragment slot="grid-right">
 				<ProjectCard title="YRE Travel" src={yre} class="bg-[#171616]" left primary>
@@ -195,6 +200,8 @@ import Grid from '$components/common/Grid.svelte';
 			</svelte:fragment>
 		</Grid>
 		<Spacer size="lg" />
+		<Spacer size="lg" />
+		<Spacer size="md" />
 	</Container>
 </div>
 
