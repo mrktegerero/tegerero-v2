@@ -231,10 +231,11 @@
 	<Spacer size="lg" />
 	<Grid gridQuarter>
 		<svelte:fragment slot="grid-left">
-			<Text class="text-sm text-white-bg">2022 - present</Text>
+			<Text class="text-sm text-white-bg hidden lg:block">2022 - present</Text>
 		</svelte:fragment>
 		<svelte:fragment slot="grid-right">
 			<Text class="text-sm xl:pl-32">Front-end Developer <Link href="https://www.sodadigital.com.au/" label="@Soda Digital" newTab/></Text>
+			<Text class="text-sm text-white-bg lg:hidden">2022 - present</Text>
 			<Spacer size="sm" />
 			<Text class="text-mute-text pt-3 xl:pl-32"
 				><span class="text-muted-text">▶</span> Developed and maintained code for in-house and client
@@ -251,10 +252,11 @@
 	<Spacer size="lg" />
 	<Grid gridQuarter>
 		<svelte:fragment slot="grid-left">
-			<Text class="text-sm text-white-bg">2021 - 2022</Text>
+			<Text class="text-sm text-white-bg hidden lg:block">2021 - 2022</Text>
 		</svelte:fragment>
 		<svelte:fragment slot="grid-right">
 			<Text class="text-sm xl:pl-32">Web Developer <Link href="https://fullstackhq.com/" label="@Fullstack HQ" newTab/></Text>
+			<Text class="text-sm text-white-bg lg:hidden">2021 - 2022</Text>
 			<Spacer size="sm" />
 			<Text class="text-mute-text pt-3 xl:pl-32"
 				><span class="text-muted-text">▶</span> Work with a variety of different languages, platforms,
@@ -274,10 +276,11 @@
 	<Spacer size="lg" />
 	<Grid gridQuarter>
 		<svelte:fragment slot="grid-left">
-			<Text class="text-sm text-white-bg">2021</Text>
+			<Text class="text-sm text-white-bg hidden lg:block">2021</Text>
 		</svelte:fragment>
 		<svelte:fragment slot="grid-right">
 			<Text class="text-sm xl:pl-32">Front-end Developer Associate <Link href="https://www.chimesconsulting.com/" label="@Chimes Consulting" newTab/></Text>
+			<Text class="text-sm text-white-bg lg:hidden">2021</Text>
 			<Spacer size="sm" />
 			<Text class="text-mute-text pt-3 xl:pl-32"
 				><span class="text-muted-text">▶</span> Created <span class="text-light-text">mockup</span> designs for web application and mobile app.</Text

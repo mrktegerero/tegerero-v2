@@ -27,10 +27,10 @@
 	}
 
 	.grid-quarter-left {
-		@apply col-span-3;
+		@apply col-span-12 lg:col-span-3;
 	}
 
 	.grid-quarter-right {
-		@apply col-span-9;
+		@apply col-span-12 lg:col-span-9;
 	}
 </style>
