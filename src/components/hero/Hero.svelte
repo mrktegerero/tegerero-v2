@@ -15,7 +15,7 @@ import Text from '$components/common/Text.svelte';
 </script>
 
 <div class="grid lg:grid-cols-2">
-	<div class="z-50">
+	<div class="z-20">
 		<div class="3xl:pl-32">
 			<Spacer size="lg" />
 			<Spacer size="lg" />

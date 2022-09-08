@@ -55,7 +55,7 @@
 				</div>
 				<div>
 					<h5
-						class="text-base mt-1 font-semibold opacity-100 transition-all duration-300 delay-300 ease-in-out "
+						class="text-base mt-1 font-semibold opacity-100 transition-all duration-500 delay-300 ease-in-out "
 						class:hide-text={y >= 1}
 					>
 						urt <span class="text-[#B2B2B3] font-normal">Tegerero</span>
@@ -98,7 +98,7 @@
 	}
 
 	.nav-scroll {
-		@apply h-[4.25rem] bg-[rgba(45,_46,_50,_0.85)] shadow-[0_10px_30px_-10px_#25262A];
+		@apply h-[4.25rem] bg-[rgba(45,_46,_50,_0.85)] shadow-[0_10px_30px_-10px_#25262A] backdrop-blur;
 	}
 
 	.nav-height {
