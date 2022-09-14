@@ -20,10 +20,10 @@
 		element.scrollIntoView({ behavior: 'smooth' });
 	};
 
-	let firstActive = [false, false, false, false, false];
+	let firstActive = [false, false, false, false];
 
-	let elements: Element[] = [undefined, undefined, undefined, undefined, undefined];
-	let actives = [false, false, false, false, false];
+	let elements: Element[] = [undefined, undefined, undefined, undefined];
+	let actives = [false, false, false, false];
 
 	setContext('Section', {
 		setActive(index: number, active: boolean) {
@@ -78,15 +78,15 @@
 			active={firstActive[1]}
 		/>
 		<NavDesktopLink
-			href="#jobs"
-			label="Experience"
-			onClick={() => scrollToElement('#jobs')}
-			active={firstActive[2]}
-		/>
-		<NavDesktopLink
 			href="#projects"
 			label="Work"
 			onClick={() => scrollToElement('#projects')}
+			active={firstActive[2]}
+		/>
+		<NavDesktopLink
+			href="#jobs"
+			label="Experience"
+			onClick={() => scrollToElement('#jobs')}
 			active={firstActive[3]}
 		/>
 		<NavDesktopLink
@@ -125,23 +125,7 @@
 	</Container>
 </div>
 
-<Container wide gutters id="jobs" bind:element={elements[2]}>
-	<div class="py-[30rem]">
-		<Spacer size="sm" />
-		<p class="text-primary font-mono text-base">Hi, my name is</p>
-		<h1 class="text-3.5xl">BODY</h1>
-		<p class="text-muted-text font-medium">
-			I’m a front-end developer specializing in building exceptional User Interface (UI) and User
-			Experience (UX) of web applications <Link
-				newTab
-				href="https://www.sodadigital.com.au/"
-				label="@sodadigital"
-			/>
-		</p>
-	</div>
-</Container>
-
-<Container wide gutters id="projects" bind:element={elements[3]} class="bg-[#25262A]">
+<Container wide gutters id="projects" bind:element={elements[2]} class="bg-[#25262A]">
 	<Spacer size="lg" />
 	<Spacer size="sm" />
 	<Grid hide gridHalf>
@@ -213,7 +197,7 @@
 	<Spacer size="md" />
 </Container>
 
-<Container wide gutters id="contact" bind:element={elements[4]}>
+<Container wide gutters id="jobs" bind:element={elements[3]}>
 	<Spacer size="lg" />
 	<Spacer size="lg" />
 	<Grid gridQuarter>

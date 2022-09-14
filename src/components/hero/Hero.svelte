@@ -24,8 +24,8 @@ import Text from '$components/common/Text.svelte';
 				<HeroTitle label="Front-end Developer" />
 			</div>
 			<div class="pt-20">
-				<Text large>'Talk is cheap.</Text>
-				<Text large>Show me the code'</Text>
+				<Text large>`Talk is cheap.</Text>
+				<Text large>Show me the code`</Text>
 			</div>
 			<div class="pt-12">
 				<Text small>I build exceptional UI and UX of web applications,</Text>
