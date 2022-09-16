@@ -42,10 +42,10 @@
 					>
 				</div>
 				<FoorterLinksMain>
-					<FooterLinks><NavDesktopLink footer label="About" href="#about" /></FooterLinks>
-					<FooterLinks><NavDesktopLink footer label="Work" href="#projects" /></FooterLinks>
-					<FooterLinks><NavDesktopLink footer label="Experience" href="#jobs" /></FooterLinks>
-					<FooterLinks><NavDesktopLink footer label="Contact" href="#contact" /></FooterLinks>
+					<FooterLinks><NavDesktopLink footer label="About" href="/#about" /></FooterLinks>
+					<FooterLinks><NavDesktopLink footer label="Work" href="/#projects" /></FooterLinks>
+					<FooterLinks><NavDesktopLink footer label="Experience" href="/#jobs" /></FooterLinks>
+					<FooterLinks><NavDesktopLink footer label="Contact" href="/#contact" /></FooterLinks>
 				</FoorterLinksMain>
 			</div>
 		</div>

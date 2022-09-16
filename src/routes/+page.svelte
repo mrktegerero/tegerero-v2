@@ -13,6 +13,7 @@
 	import ProjectCard from '$components/cards/ProjectCard.svelte';
 	import Tag from '$components/common/Tag.svelte';
 	import Grid from '$components/common/Grid.svelte';
+	import AboutGeneric from '$components/about/AboutGeneric.svelte';
 
 	const scrollToElement = (selector: string) => {
 		const element = document.querySelector(selector) as HTMLElement;
@@ -109,19 +110,11 @@
 
 <div class="bg-[#25262A]">
 	<Container wide gutters id="about" bind:element={elements[1]}>
-		<div class="py-[30rem]">
-			<Spacer size="sm" />
-			<p class="text-primary font-mono text-base">Hi, my name is</p>
-			<h1 class="text-3.5xl">KURT TEGERERO</h1>
-			<p class="text-muted-text font-medium">
-				I’m a front-end developer specializing in building exceptional User Interface (UI) and User
-				Experience (UX) of web applications <Link
-					newTab
-					href="https://www.sodadigital.com.au/"
-					label="@sodadigital"
-				/>
-			</p>
-		</div>
+		<Spacer size="lg" />
+		<Spacer size="lg" />
+		<AboutGeneric/>
+		<Spacer size="lg" />
+		<Spacer size="sm" />
 	</Container>
 </div>
 
@@ -206,7 +199,7 @@
 		</svelte:fragment>
 		<svelte:fragment slot="grid-right">
 			<div class="flex items-stretch h-full w-full">
-				<Text class="text-mute-text text-sm xl:pl-32 self-end pb-3"
+				<Text class="text-mute-text text-sm lg:pl-32 self-end pb-3"
 					>Companies that I once working with made me who I am</Text
 				>
 			</div>

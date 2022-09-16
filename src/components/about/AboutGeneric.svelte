@@ -1,0 +1,114 @@
+<script lang="ts">
+	import Grid from '$components/common/Grid.svelte';
+	import AboutButton from './AboutButton.svelte';
+	import IconJs from '$components/icons/IconJs.svelte';
+	import IconFb from '$components/icons/IconFb.svelte';
+	import Text from '$components/common/Text.svelte';
+	import Spacer from '$components/common/Spacer.svelte';
+	import { cubicInOut } from 'svelte/easing';
+	// import { swipe } from '$lib/actions/swipe';
+	import { screens } from '$lib/responsive';
+	import { scale, fly } from 'svelte/transition';
+	import AboutCompanies from './AboutCompanies.svelte';
+
+	// import beggining from '$images/icon-image/beginning.png';
+
+	export let start = 0;
+	let begin = '/src/images/icon-image/beginning.png';
+  let company1 = '/src/images/companies/chimes.png';
+  let company2 = '/src/images/companies/fullstackhq.png';
+  let company3 = '/src/images/companies/soda.png';
+
+	let content = [
+		{
+			comment: `Since beggining of my journey as a front-end developer nearly 2 years agom I've done remote work with such an amazing companies Since beggining of my journey as a front-end developer nearly 2 years agom I've done remote work with such an amazing companies`,
+			label: 'Design',
+			img: begin,
+			desc: 'try'
+		},
+		{
+			comment: `Since Past of my journey as a front-end developer nearly 2 years agom I've done remote work with such an amazing companies`,
+			label: 'Front-End',
+			img: begin,
+			desc: 'try'
+		},
+		{
+			comment: `Since Future of my journey as a front-end developer nearly 2 years agom I've done remote work with such an amazing companies`,
+			label: 'SEO',
+			img: begin,
+			desc: 'try'
+		}
+	];
+
+  let companies = [
+    {
+      img: company3,
+    },
+    {
+      img: company2,
+    },
+    {
+      img: company1,
+    }
+  ]
+
+	start = start % content.length;
+
+	content = [...content.slice(start, content.length), ...content.slice(0, start)];
+
+	type Content = typeof content[0];
+	let current: Content = content[0];
+
+	function select(e: CustomEvent<Content>) {
+		current = e.detail;
+	}
+</script>
+
+<Grid gridHalf>
+	<svelte:fragment slot="grid-left">
+		<div class="w-full pb-8 lg:pb-12 lg:bottom-0">
+			<AboutButton items={content} {current} on:select={select} />
+		</div>
+	</svelte:fragment>
+	<svelte:fragment slot="grid-right">
+		<div class="lg:pl-16 lg:pr-24 relative">
+			<Text class="text-muted-text text-xs">Introduce</Text>
+			<Spacer size="sm" />
+			<Spacer size="sm" />
+			<Text class="text-3xl">Hello! I'm Kurt Tegerero</Text>
+			<Spacer size="sm" />
+			<Spacer size="md" />
+			<div class=" stacked">
+				{#key current}
+					<div
+						out:fly|local={{
+							x: !$screens.md ? 0 : -30,
+							y: !$screens.md ? 0 : 0,
+							delay: !$screens.md ? 800 : 400,
+							duration: 200,
+							opacity: 0,
+							easing: cubicInOut
+						}}
+						in:fly|local={{
+							delay: !$screens.md ? 800 : 400,
+							duration: 400,
+							opacity: 0,
+							x: !$screens.md ? 0 : 30,
+							y: !$screens.md ? 30 : 0,
+							easing: cubicInOut
+						}}
+					>
+						<Text class="italic">Every great design begin with an even better story</Text>
+						<Spacer size="sm" />
+						<Spacer size="sm" />
+						<Text class="text-muted-text text-xs leading-6">{current.comment}</Text>
+					</div>
+				{/key}
+			</div>
+		</div>
+	</svelte:fragment>
+</Grid>
+<Spacer size="lg" />
+<Spacer size="sm" />
+
+<AboutCompanies items={companies}/>
