@@ -29,7 +29,7 @@ import Text from '$components/common/Text.svelte';
 			</div>
 			<div class="pt-12">
 				<Text small>I build exceptional UI and UX of web applications,</Text>
-				<Text small>and I love what I do.</Text>
+				<Text small>and I just love what I do.</Text>
 			</div>
 			<div class="pt-20">
 				<Link

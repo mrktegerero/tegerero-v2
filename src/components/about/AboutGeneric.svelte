@@ -21,22 +21,25 @@
 
 	let content = [
 		{
-			comment: `Since beggining of my journey as a front-end developer nearly 2 years agom I've done remote work with such an amazing companies Since beggining of my journey as a front-end developer nearly 2 years agom I've done remote work with such an amazing companies`,
-			label: 'Design',
-			img: begin,
-			desc: 'try'
-		},
-		{
-			comment: `Since Past of my journey as a front-end developer nearly 2 years agom I've done remote work with such an amazing companies`,
 			label: 'Front-End',
 			img: begin,
-			desc: 'try'
+			desc: 'I develop front-end with super smooth coding',
+			subtitle: 'Every fantastic design needs a fantastic Front-end dev',
+			comment: `Since the beginning of my journey as a front-end developer nearly 2 years ago. I've done remote work with such an amazing companies with talented people to create web applications for both business and consumer use. I'm confident, naturally curious and actively seek out new technologies to improve coding.`
 		},
 		{
-			comment: `Since Future of my journey as a front-end developer nearly 2 years agom I've done remote work with such an amazing companies`,
 			label: 'SEO',
 			img: begin,
-			desc: 'try'
+			desc: `Let's boost your website with SEO optimize`,
+			subtitle: 'SEO can makes your website more visible',
+			comment: `Optimizing SEO can helps businesses to find new customers and promote brans on top pages of section engines that makes easy to find. Let's take advantage of the latest modern technologies to build amazing user experiences for everyone.`,
+		},
+		{
+			label: 'Photo Editing',
+			img: begin,
+			desc: 'Enhance images for better quality',
+			subtitle: 'Produce required visuals for build up websites',
+			comment: `In my college years, enhancing images and editing videos are one of my hubbies. I love to create exact visuals to represent the business. I do cropping, optimizing image quality and understanding different image formats to use in every situations.`,
 		}
 	];
 
@@ -98,7 +101,7 @@
 							easing: cubicInOut
 						}}
 					>
-						<Text class="italic">Every great design begin with an even better story</Text>
+						<Text class="italic">{current.subtitle}</Text>
 						<Spacer size="sm" />
 						<Spacer size="sm" />
 						<Text class="text-muted-text text-xs leading-6">{current.comment}</Text>
