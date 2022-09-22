@@ -5,7 +5,8 @@
 	export let description = '';
 	export let image: string = undefined;
 	export let alt = '';
-	let icon = '/src/images/KT-icon.png';
+	// let icon = '/src/images/KT-icon.png';
+	import icon from '$images/KT-icon.png';
 </script>
 
 <svelte:head>
