@@ -15,6 +15,18 @@ module.exports = {
 			mono: ['SFMono', ...defaultTheme.fontFamily.mono]
 		},
     extend: {
+			keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-10deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+				show: {
+					'0%': { transform: 'translateY(-42px)', opacity: '0' },
+					'20%': { transform: 'translateY(-42px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+				}
+      },
+
       fontSize: {
 				'4xs': '0.50rem',
 				'3xs': '0.55rem',
