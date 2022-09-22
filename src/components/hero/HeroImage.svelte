@@ -8,7 +8,7 @@ import IconReact from '$components/icons/IconReact.svelte';
 	export let desktop: boolean = false;
 </script>
 
-<div class="right-0 lg:pt-80 lg:hidden z-0" class:image-container-desktop={desktop}>
+<div class="right-0 lg:pt-80 lg:hidden z-0 " class:image-container-desktop={desktop}>
 	<div class="relative">
 		<div class="" class:image-bg-desktop={desktop}>
 			<img src={img} alt="" class="w-full" class:image-desktop={desktop} />

@@ -18,12 +18,16 @@ module.exports = {
 			keyframes: {
         wiggle: {
           '0%, 100%': { transform: 'rotate(-10deg)' },
-          '50%': { transform: 'rotate(3deg)' },
+          '50%': { transform: 'rotate(10deg)' },
         },
 				show: {
 					'0%': { transform: 'translateY(-42px)', opacity: '0' },
 					'20%': { transform: 'translateY(-42px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
+				},
+				opacity: {
+					'0%': { opacity: '0' },
+          '100%': { opacity: '1' },
 				}
       },
 

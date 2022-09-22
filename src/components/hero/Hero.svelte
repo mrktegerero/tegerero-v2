@@ -24,7 +24,7 @@
 			<div class="relative">
 				<HeroTitle label="Front-end Developer" />
 			</div>
-			<div class="pt-20">
+			<div class="pt-20 animate-[opacity_1s_ease-in-out]">
 				<Text large qouteBefore><span class="pl-3 sm:pl-5"></span> Talk is cheap.</Text>
 				<Text large qouteAfter>Show me the code</Text>
 			</div>
