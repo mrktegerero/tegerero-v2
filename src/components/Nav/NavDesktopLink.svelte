@@ -23,6 +23,10 @@
 		@apply focus:after:right-[-1rem] focus:after:opacity-100;
 	}
 
+	.link::after:hover {
+		-webkit-left: 0.8rem;
+	}
+
 	.footer{
 		@apply mr-0;
 	}
