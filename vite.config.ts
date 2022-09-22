@@ -1,7 +1,7 @@
 // import { sveltekit } from '@sveltejs/kit/vite';
-import {sveltekit} from '@sveltejs/kit/vite'
+import { sveltekit } from '@sveltejs/kit/vite';
 import { execSync } from 'node:child_process';
-// import image2 from './image2.js';
+import image2 from './image2.js';
 import tailwindConfig from './tailwindConfigPlugin.js';
 import * as path from 'path';
 
@@ -9,7 +9,7 @@ const commitHash = execSync('git rev-parse HEAD').toString().trimEnd();
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [tailwindConfig(), sveltekit()],
+	plugins: [tailwindConfig(), image2(), sveltekit()],
 	build: {
 		rollupOptions: {
 			output: {
