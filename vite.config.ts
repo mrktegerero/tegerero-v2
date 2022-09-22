@@ -29,6 +29,7 @@ const config = {
 	resolve: {
 		alias: {
 			$images: path.resolve('./src/images'),
+			$files: path.resolve('./src/files'),
 			$video: path.resolve('./src/video'),
 			$src: path.resolve('./src'),
 			$components: path.resolve('./src/components')

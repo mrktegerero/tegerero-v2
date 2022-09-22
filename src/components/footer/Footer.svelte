@@ -12,8 +12,7 @@
 	import FooterSocials from './FooterSocials.svelte';
 	import IconIg from '$components/icons/IconIg.svelte';
 	import IconLinkedIn from '$components/icons/IconLinkedIn.svelte';
-
-	let icon = '/src/images/KT-icon.png';
+	import Icon from '$images/KT-icon.png';
 
 	let now = new Date();
 
@@ -54,7 +53,7 @@
 				<div class="flex">
 					<a href="/" class="flex">
 						<div class="w-10">
-							<img src={icon} alt="" />
+							<img src={Icon} alt="" />
 						</div>
 						<div>
 							<h5

@@ -32,6 +32,9 @@
 			"$images": [
 				"src/images"
 			],
+			"$files": [
+				"src/files"
+			],
 			"$video": [
 				"src/video"
 			],

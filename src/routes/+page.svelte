@@ -14,6 +14,10 @@
 	import Tag from '$components/common/Tag.svelte';
 	import Grid from '$components/common/Grid.svelte';
 	import AboutGeneric from '$components/about/AboutGeneric.svelte';
+	import Kurt from '$images/hero/krt.png';
+	import Mansion from '$images/projects/mansion88.png';
+	import Yre from '$images/projects/yre.png';
+	import Tier1 from '$images/projects/tier1.png';
 
 	const scrollToElement = (selector: string) => {
 		const element = document.querySelector(selector) as HTMLElement;
@@ -60,10 +64,7 @@
 		}
 	}
 
-	let src = '/src/images/hero/krt.png';
-	let mansion = '/src/images/projects/mansion88.png';
-	let yre = '/src/images/projects/yre.png';
-	let tier1 = '/src/images/projects/tier1.png';
+
 </script>
 
 <svelte:window on:scroll={scroll} />
@@ -106,7 +107,7 @@
 		<Hero />
 	</div>
 </Container>
-<HeroImage img={src} />
+<HeroImage img={Kurt} />
 
 <div class="bg-[#25262A]">
 	<Container wide gutters id="about" bind:element={elements[1]}>
@@ -124,25 +125,25 @@
 	<Grid hide gridHalf>
 		<svelte:fragment slot="grid-left">
 			<Spacer size="sm" />
-			<Text class="text-[2.5rem] leading-[3.5rem] xl:pl-32">Letest Works</Text>
+			<Text class="text-[2.5rem] leading-[3.5rem] xl:pl-32">Latest Works</Text>
 			<Text class="text-muted-text text-sm xl:pl-32">Perfect solutions for digital experience</Text>
 			<Spacer size="lg" />
 			<Spacer size="lg" />
-			<ProjectCard title="Mansion 88" src={mansion} class="bg-[#191C2F]" right>
+			<ProjectCard title="Mansion 88" src={Mansion} class="bg-[#191C2F]" right>
 				<svelte:fragment slot="tags">
 					<Tag label="HTML" />
 					<Tag label="Javascript" />
 					<Tag label="CSS" />
 				</svelte:fragment>
 			</ProjectCard>
-			<ProjectCard hideDesktop title="YRE Travel" src={yre} class="bg-[#171616] mt-20" left primary>
+			<ProjectCard hideDesktop title="YRE Travel" src={Yre} class="bg-[#171616] mt-20" left primary>
 				<svelte:fragment slot="tags">
 					<Tag label="HTML" />
 					<Tag label="GatsbyJs" />
 					<Tag label="GraphQL" />
 				</svelte:fragment>
 			</ProjectCard>
-			<ProjectCard hideDesktop title="Tier One" src={tier1} class="bg-[#080808] mt-20">
+			<ProjectCard hideDesktop title="Tier One" src={Tier1} class="bg-[#080808] mt-20">
 				<svelte:fragment slot="tags">
 					<Tag label="HTML" />
 					<Tag label="Javascript" />
@@ -167,7 +168,7 @@
 			>
 		</svelte:fragment>
 		<svelte:fragment slot="grid-right">
-			<ProjectCard title="YRE Travel" src={yre} class="bg-[#171616]" left primary>
+			<ProjectCard title="YRE Travel" src={Yre} class="bg-[#171616]" left primary>
 				<svelte:fragment slot="tags">
 					<Tag label="HTML" />
 					<Tag label="GatsbyJs" />
@@ -176,7 +177,7 @@
 			</ProjectCard>
 			<Spacer size="lg" />
 			<Spacer size="md" />
-			<ProjectCard title="Tier One" src={tier1} class="bg-[#080808]">
+			<ProjectCard title="Tier One" src={Tier1} class="bg-[#080808]">
 				<svelte:fragment slot="tags">
 					<Tag label="HTML" />
 					<Tag label="Javascript" />

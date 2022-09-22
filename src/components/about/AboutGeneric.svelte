@@ -10,33 +10,38 @@
 	import { screens } from '$lib/responsive';
 	import { scale, fly } from 'svelte/transition';
 	import AboutCompanies from './AboutCompanies.svelte';
+	import Begin from '$images/icon-image/beginning.png';
+	import Chimes from '$images/companies/chimes.png';
+	import FStack from '$images/companies/fullstackhq.png';
+	import Soda from '$images/companies/soda.png';
 
 	// import beggining from '$images/icon-image/beginning.png';
 
 	export let start = 0;
-	let begin = '/src/images/icon-image/beginning.png';
-  let company1 = '/src/images/companies/chimes.png';
-  let company2 = '/src/images/companies/fullstackhq.png';
-  let company3 = '/src/images/companies/soda.png';
+	// let begin = '/src/images/icon-image/beginning.png';
+  // let company1 = '/src/images/companies/chimes.png';
+  // let company2 = '/src/images/companies/fullstackhq.png';
+  // let company3 = '/src/images/companies/soda.png';
+	
 
 	let content = [
 		{
 			label: 'Front-End',
-			img: begin,
+			img: Begin,
 			desc: 'I develop front-end with super smooth coding',
 			subtitle: 'Every fantastic design needs a fantastic Front-end dev',
 			comment: `Since the beginning of my journey as a front-end developer nearly 2 years ago. I've done remote work with such an amazing companies with talented people to create web applications for both business and consumer use. I'm confident, naturally curious and actively seek out new technologies to improve coding.`
 		},
 		{
 			label: 'SEO',
-			img: begin,
+			img: Begin,
 			desc: `Let's boost your website with SEO optimize`,
 			subtitle: 'SEO can makes your website more visible',
 			comment: `Optimizing SEO can helps businesses to find new customers and promote brans on top pages of section engines that makes easy to find. Let's take advantage of the latest modern technologies to build amazing user experiences for everyone.`,
 		},
 		{
 			label: 'Photo Editing',
-			img: begin,
+			img: Begin,
 			desc: 'Enhance images for better quality',
 			subtitle: 'Produce required visuals for build up websites',
 			comment: `In my college years, enhancing images and editing videos are one of my hubbies. I love to create exact visuals to represent the business. I do cropping, optimizing image quality and understanding different image formats to use in every situations.`,
@@ -45,13 +50,13 @@
 
   let companies = [
     {
-      img: company3,
+      img: Soda,
     },
     {
-      img: company2,
+      img: FStack,
     },
     {
-      img: company1,
+      img: Chimes,
     }
   ]
 

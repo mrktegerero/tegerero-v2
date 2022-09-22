@@ -4,6 +4,8 @@
 	import IconTwitter from '$components/icons/IconTwitter.svelte';
 	import NavDesktopIcon from './NavDesktopIcon.svelte';
 	import NavDesktopIconMain from './NavDesktopIconMain.svelte';
+	import Icon from '$images/KT-icon.png'
+	import Resume from '$files/resume.pdf'
 
 	export let duration: string = '1000ms';
 	export let offset: number = 0;
@@ -12,8 +14,8 @@
 	let headerClass: string = 'show';
 	let y: number = 0;
 	let lastY: number = 0;
-	let icon = '/src/images/KT-icon.png';
-	let resume = '/src/resume.pdf';
+	// let icon = '/src/images/KT-icon.png';
+	// let resume = '/src/resume.pdf';
 
 	function deriveClass(y, dy) {
 		if (y < offset) {
@@ -51,7 +53,7 @@
 		<div class="flex flex-row items-center justify-start">
 			<a href="/" class="flex">
 				<div class="w-10">
-					<img src={icon} alt="" />
+					<img src={Icon} alt="" />
 				</div>
 				<div>
 					<h5
@@ -78,7 +80,7 @@
 			>
 			<a
 				data-tooltip="Check my resume!"
-				href={resume}
+				href={Resume}
 				target="_blank"
 				class="bg-muted-dark-bg p-3 rounded-full relative"
 				><div class="w-6 text-primary"><IconResume /></div></a

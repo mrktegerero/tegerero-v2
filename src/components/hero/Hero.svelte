@@ -3,7 +3,7 @@
 	import Link from '$components/common/Link.svelte';
 
 	import Spacer from '$components/common/Spacer.svelte';
-import Text from '$components/common/Text.svelte';
+	import Text from '$components/common/Text.svelte';
 	import HeroImage from './HeroImage.svelte';
 	import HeroNumber from './HeroNumber.svelte';
 	import HeroNumbers from './HeroNumbers.svelte';
@@ -12,7 +12,7 @@ import Text from '$components/common/Text.svelte';
 	import HeroTitle from './HeroTitle.svelte';
 	// import imgPlinth from '$src/images/hero/';
 	// let src = '/src/images/hero/krt.png';
-	import src from '$images/hero/krt.png'
+	import Kurt from '$images/hero/krt.png';
 </script>
 
 <div class="grid lg:grid-cols-2">
@@ -54,5 +54,5 @@ import Text from '$components/common/Text.svelte';
 			</HeroNumbers>
 		</HeroNumber>
 	</div>
-	<HeroImage desktop img={src} />
+	<HeroImage desktop img={Kurt} />
 </div>
