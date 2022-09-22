@@ -24,7 +24,7 @@
 			<div class="relative">
 				<HeroTitle label="Front-end Developer" />
 			</div>
-			<div class="pt-20 animate-[opacity_1s_ease-in-out]">
+			<div class="pt-20 animation">
 				<Text large qouteBefore><span class="pl-3 sm:pl-5"></span> Talk is cheap.</Text>
 				<Text large qouteAfter>Show me the code</Text>
 			</div>
@@ -59,7 +59,9 @@
 
 
 <style lang="postcss">
-	pre {
-		@apply ml-[-15px]
+
+	.animation {
+		-webkit-animation: opacity 1s ease-in-out;
+		animation: opacity 1s ease-in-out;
 	}
 </style>
