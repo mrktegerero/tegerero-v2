@@ -4,9 +4,9 @@
 </script>
 
 
-<div class="flex flex-col md:flex-row justify-center items-center">
+<div class="flex justify-center items-center">
   {#each items as item }
-  <div class="w-[10rem] md:w-[9rem] mx-auto md:mx-14 img py-5 md:py-0">
+  <div class="w-[10rem] md:w-[9rem] mx-2 md:mx-14 img py-5 md:py-0">
     <img src={item.img} alt="" class="w-full"/>
   </div>
   {/each}
