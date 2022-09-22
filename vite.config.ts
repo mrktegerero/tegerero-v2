@@ -4,16 +4,12 @@ import { execSync } from 'node:child_process';
 import image2 from './image2.js';
 import tailwindConfig from './tailwindConfigPlugin.js';
 import * as path from 'path';
-import { visualizer } from 'rollup-plugin-visualizer';
 
 const commitHash = execSync('git rev-parse HEAD').toString().trimEnd();
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [visualizer({
-		emitFile: true,
-		file: 'stats.html'
-	}), tailwindConfig(), image2(), sveltekit()],
+	plugins: [tailwindConfig(), image2(), sveltekit()],
 	build: {
 		rollupOptions: {
 			output: {
@@ -22,7 +18,7 @@ const config = {
 		}
 	},
 	server: {
-		port: 3000
+		port: 3000,
 		// watch: {
 		// 	ignored: ['!**/node_modules/@porterspaints/queries/**']
 		// }

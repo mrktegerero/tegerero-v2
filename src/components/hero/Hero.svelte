@@ -11,7 +11,8 @@ import Text from '$components/common/Text.svelte';
 	import HeroText from './HeroText.svelte';
 	import HeroTitle from './HeroTitle.svelte';
 	// import imgPlinth from '$src/images/hero/';
-	let src = '/src/images/hero/krt.png';
+	// let src = '/src/images/hero/krt.png';
+	import src from '$images/hero/krt.png'
 </script>
 
 <div class="grid lg:grid-cols-2">
