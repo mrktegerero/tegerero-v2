@@ -8,7 +8,7 @@
 	import HeroNumber from './HeroNumber.svelte';
 	import HeroNumbers from './HeroNumbers.svelte';
 	import HeroNumberText from './HeroNumberText.svelte';
-	import HeroText from './HeroText.svelte';
+	// import HeroText from './HeroText.svelte';
 	import HeroTitle from './HeroTitle.svelte';
 	// import imgPlinth from '$src/images/hero/';
 	// let src = '/src/images/hero/krt.png';
@@ -25,8 +25,8 @@
 				<HeroTitle label="Front-end Developer" />
 			</div>
 			<div class="pt-20">
-				<Text large>`Talk is cheap.</Text>
-				<Text large>Show me the code`</Text>
+				<Text large qouteBefore><span class="pl-3 sm:pl-5"></span> Talk is cheap.</Text>
+				<Text large qouteAfter>Show me the code</Text>
 			</div>
 			<div class="pt-12">
 				<Text small>I build exceptional UI and UX of web applications,</Text>
@@ -56,3 +56,10 @@
 	</div>
 	<HeroImage desktop img={Kurt} />
 </div>
+
+
+<style lang="postcss">
+	pre {
+		@apply ml-[-15px]
+	}
+</style>

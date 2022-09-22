@@ -13,9 +13,14 @@
 
 <style lang="postcss">
 	.link {
-		@apply text-light-text leading-7 text-[13px] font-mono mr-12 last:mr-0 relative transition-all duration-300 hover:text-primary;
+		@apply text-light-text leading-7 text-[13px] font-mono mr-12 last:mr-0 relative transition-all duration-300 hover:text-primary focus:text-primary;
 		@apply before:content-['<'] before:absolute before:left-[0.4rem] before:opacity-0 before:transition-all before:duration-300 before:ease-out hover:before:left-[-0.8rem] hover:before:opacity-100;
-		@apply after:content-['>'] after:absolute after:right-[0.2rem] after:opacity-0 after:transition-all after:duration-300 after:ease-out hover:after:right-[-1rem] hover:after:opacity-100;
+
+		@apply focus:before:left-[-0.8rem] focus:before:opacity-100;
+
+		@apply after:content-['>'] after:absolute after:right-[0.2rem] after:opacity-0 after:transition-all after:duration-300 after:ease-out hover:after:right-[-1rem] hover:after:opacity-100 ;
+
+		@apply focus:after:right-[-1rem] focus:after:opacity-100;
 	}
 
 	.footer{

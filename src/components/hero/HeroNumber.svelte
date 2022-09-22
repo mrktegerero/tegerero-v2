@@ -4,6 +4,6 @@
 
 <style lang="postcss">
   .number{
-    @apply flex ;
+    @apply flex justify-between sm:justify-start ;
   }
 </style>
