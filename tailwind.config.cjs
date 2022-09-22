@@ -21,8 +21,9 @@ module.exports = {
           '50%': { transform: 'rotate(10deg)' },
         },
 				show: {
-					'0%': { top: '-50px', opacity: '0' },
-          '100%': { top: '0', opacity: '1' },
+					'0%': { transform: 'translateY(-42px)', opacity: '0' },
+					'20%': { transform: 'translateY(-42px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
 				},
 				opacity: {
 					'0%': { opacity: '0' },

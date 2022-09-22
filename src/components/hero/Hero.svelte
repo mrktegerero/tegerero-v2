@@ -24,7 +24,7 @@
 			<div class="relative">
 				<HeroTitle label="Front-end Developer" />
 			</div>
-			<div class="pt-20 animation">
+			<div class="pt-20 animate-[opacity_1s_ease-in-out]">
 				<Text large qouteBefore><span class="pl-3 sm:pl-5"></span> Talk is cheap.</Text>
 				<Text large qouteAfter>Show me the code</Text>
 			</div>
@@ -56,12 +56,3 @@
 	</div>
 	<HeroImage desktop img={Kurt} />
 </div>
-
-
-<style lang="postcss">
-
-	.animation {
-		-webkit-animation: opacity 1s ease-in-out;
-		animation: opacity 1s ease-in-out;
-	}
-</style>
