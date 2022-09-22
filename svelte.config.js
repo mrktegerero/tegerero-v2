@@ -22,7 +22,8 @@ const config = {
 	],
 	vitePlugin: {
 		experimental: {
-			inspector: true
+			inspector: true,
+			useVitePreprocess: true
 		}
 	},
 	kit: {

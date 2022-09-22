@@ -11,9 +11,9 @@
 </script>
 
 <div class="{classes} rounded-xl w-full overflow-hidden" class:hide={hideDesktop}>
-	<div class="p-8 py-14 lg:p-14 flex justify-between">
+	<div class="p-8 py-14 lg:p-14 md:flex justify-between">
 		<p class="text-[1.85rem] font-mono" class:primary>{title}</p>
-		<div class="flex">
+		<div class="flex pt-5 md:pt-0">
 			<slot name="tags" />
 		</div>
 	</div>

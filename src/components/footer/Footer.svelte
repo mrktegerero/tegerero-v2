@@ -50,7 +50,7 @@
 		</div>
 		<div class="flex flex-col-reverse lg:grid lg:grid-cols-12 pb-24">
 			<div class="col-span-12 lg:col-span-6 3xl:pr-20 pt-20 lg:pt-0">
-				<div class="flex">
+				<div class="md:flex">
 					<a href="/" class="flex">
 						<div class="w-10">
 							<img src={Icon} alt="" />
@@ -63,7 +63,7 @@
 							</h5>
 						</div></a
 					>
-					<div class="pl-5 flex items-center">
+					<div class="md:pl-5 pt-5 md:pt-0 flex items-center">
 						<Text class="text-mute-text text-sm font-bold flex items-center"
 							><span class="pr-2">&copy;</span> {year}. All rights Reserved</Text
 						>

@@ -20,10 +20,10 @@ import IconReact from '$components/icons/IconReact.svelte';
 		<div class="absolute top-80 lg:top-96 left-[-2] p-7 bg-darker-bg rounded-full z-50 shadow-2xl">
 			<div class="w-14 text-[#ef4823]"><IconSvelte /></div>
 		</div>
-		<div class="absolute top-[25rem] lg:top-[30rem] right-0 p-9 bg-darker-bg rounded-full z-50">
+		<div class="absolute top-[20rem] md:top-[25rem] lg:top-[30rem] right-0 p-9 bg-darker-bg rounded-full z-50">
 			<div class="w-16 text-[#FFD600]"><IconJs /></div>
 		</div>
-		<div class="absolute top-[20rem] lg:top-[30rem] right-10 lg:right-0 lg:left-[43rem] p-1 bg-[#64F4AC] rounded-full z-50" />
+		<div class="absolute top-[15rem] md:top-[20rem] lg:top-[30rem] right-10 lg:right-0 lg:left-[43rem] p-1 bg-[#64F4AC] rounded-full z-50" />
 	</div>
 </div>
 
