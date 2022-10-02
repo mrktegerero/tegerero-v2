@@ -10,12 +10,12 @@
 	<div class="wrapper">
 		<div class="level">
 			<div class="nav-items">
-				<a href="#about" class="nav-item animate-[left_1s_ease-in-out]" on:click={close}>About</a>
-				<a href="#projects" class="nav-item animate-[left_1s_ease-in-out_2s]" on:click={close}
+				<a href="/#about" class="nav-item animate-[left_1s_ease-in-out]" on:click={close}>About</a>
+				<a href="/#projects" class="nav-item animate-[left_1s_ease-in-out_2s]" on:click={close}
 					>Projects</a
 				>
-				<a href="#jobs" class="nav-item" on:click={close}>Experience</a>
-				<a href="#contact" class="nav-item" on:click={close}>Contact</a>
+				<a href="/#jobs" class="nav-item" on:click={close}>Experience</a>
+				<a href="/#contact" class="nav-item" on:click={close}>Contact</a>
 			</div>
 		</div>
 	</div>
