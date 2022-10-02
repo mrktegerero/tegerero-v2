@@ -6,6 +6,6 @@
 
 <style lang="postcss">
   .text {
-    @apply uppercase text-muted-text;
+    @apply text-sm sm:text-lg uppercase text-muted-text;
   }
 </style>
