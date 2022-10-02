@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import NavDesktopMain from './NavDesktopMain.svelte';
+	import NavDesktopMain from './NavMain.svelte';
 	import NavDesktopLink from './NavDesktopLink.svelte';
 	import { getContext, setContext } from 'svelte';
 	import { createUrlStore } from '$lib/url';

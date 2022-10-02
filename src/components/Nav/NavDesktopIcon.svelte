@@ -1,9 +1,11 @@
 <script lang="ts">
-	export let label: string;
+	export let label: string | undefined;
 	export let href: string;
+	let classes: string = '';
+	export { classes as class };
 </script>
 
-<div class="links"><a {href} target="_blank" class="flex text-muted-text text-sm group"><div class="icon"><slot /></div>{label} </a></div>
+<div class="links {classes}"><a {href} target="_blank" class="flex text-muted-text text-sm group"><div class="icon"><slot /></div>{label} </a></div>
 
 <style lang="postcss">
 	.links {

@@ -18,9 +18,11 @@
 <div class="grid lg:grid-cols-2">
 	<div class="z-20">
 		<div class="3xl:pl-32">
+			<div class="hidden lg:block">
 			<Spacer size="lg" />
 			<Spacer size="lg" />
 			<Spacer size="sm" />
+		</div>
 			<div class="relative">
 				<HeroTitle label="Front-end Developer" />
 			</div>

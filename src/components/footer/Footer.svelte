@@ -21,7 +21,7 @@
 
 <FooterMain>
 	<Container wide gutters>
-		<div class="grid grid-cols-12 py-32">
+		<div class="grid grid-cols-12 py-20 md:py-32">
 			<div class="col-span-12 lg:col-span-6 3xl:pr-20">
 				<Text class="text-3xl">Let's Make something amazing together.</Text>
 				<Text class="text-3xl pt-12"

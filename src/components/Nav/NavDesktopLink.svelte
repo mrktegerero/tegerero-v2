@@ -1,15 +1,16 @@
 <script lang="ts">
 	import { afterUpdate } from 'svelte';
 	export let label: string = '';
-	export let number: string= '';
+	export let number: string = '';
 	export let href: string = '';
 	export let onClick = undefined;
 	export let active: boolean = undefined;
 	export let footer: boolean = undefined;
 </script>
 
-
-<a {href} class="link" class:footer class:active on:click={onClick}><span class="text-primary pr-1">{number}</span>{label}</a>
+<a {href} class="link" class:footer class:active on:click={onClick}
+	><span class="text-primary pr-1">{number}</span>{label}</a
+>
 
 <style lang="postcss">
 	.link {
@@ -18,16 +19,32 @@
 
 		@apply focus:before:left-[-0.8rem] focus:before:opacity-100;
 
-		@apply after:content-['>'] after:absolute after:right-[0.2rem] after:opacity-0 after:transition-all after:duration-300 after:ease-out hover:after:right-[-1rem] hover:after:opacity-100 ;
+		@apply after:content-['>'] after:absolute after:right-[0.2rem] after:opacity-0 after:transition-all after:duration-300 after:ease-out hover:after:right-[-1rem] hover:after:opacity-100;
 
 		@apply focus:after:right-[-1rem] focus:after:opacity-100;
+
+		@apply animate-[left_0.5s_ease-in-out] animation-fill-both;
+	}
+
+	.link:nth-child(1) {
+		@apply animation-delay-200;
+	}
+
+	.link:nth-child(2) {
+		@apply animation-delay-400;
+	}
+	.link:nth-child(3) {
+		@apply animation-delay-600;
+	}
+	.link:nth-child(4) {
+		@apply animation-delay-800;
 	}
 
 	.link::after:hover {
 		-webkit-left: 0.8rem;
 	}
 
-	.footer{
+	.footer {
 		@apply mr-0;
 	}
 	.active {

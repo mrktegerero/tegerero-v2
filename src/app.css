@@ -23,6 +23,10 @@
 		@apply list-none m-0 p-0;
 	}
 
+
+	.disable {
+		overflow: hidden;
+	}
   	/* Defaults */
 
 	h1, h2, h3, h4, h5, h5 {
