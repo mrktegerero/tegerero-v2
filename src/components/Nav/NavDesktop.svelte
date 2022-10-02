@@ -1,9 +1,10 @@
 <script>
 	import { page } from '$app/stores';
-	import NavDesktopMain from './NavMain.svelte';
+	import NavDesktopMain from './NavDesktopMain.svelte';
 	import NavDesktopLink from './NavDesktopLink.svelte';
 	import { getContext, setContext } from 'svelte';
 	import { createUrlStore } from '$lib/url';
+	import NavMobile from './NavMobile.svelte';
 	export let ssrUrl = '';
 
 	setContext('APP', { url: createUrlStore(ssrUrl) });
@@ -21,4 +22,6 @@
 			<NavDesktopLink href="/#contact" label="Contact" />
 		</svelte:fragment>
 	</NavDesktopMain>
+
+	<NavMobile/>
 {/if}
