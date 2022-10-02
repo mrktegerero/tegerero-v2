@@ -28,10 +28,10 @@
 		</NavigationIcon>
 	</div>
 
-	<div class="flex flex-row items-center justify-center">
+	<div class="flex flex-row items-center justify-center animate-[left_0.5s_ease-in-out] animation-fill-both @apply animation-delay-200">
 		<a
 			href="/"
-			class="flex flex-row w-40 transition-all duration-500 delay-300 ease-in-out animate-[left_0.5s_ease-in-out] animation-fill-both @apply animation-delay-200"
+			class="flex flex-row w-40 transition-all duration-500 delay-300 ease-in-out"
 			class:center={y >= 1}
 		>
 			<div class="w-8">
@@ -63,7 +63,7 @@
 			data-tooltip="Check my resume!"
 			href={Resume}
 			target="_blank"
-			class="bg-muted-dark-bg p-3 rounded-full relative animate-[left_0.5s_ease-in-out] animation-fill-both animation-delay-800"
+			class="bg-muted-dark-bg p-3 rounded-full relative animate-[left_0.5s_ease-in-out] animation-fill-both animation-delay-400 sm:animation-delay-800"
 			><div class="w-6 text-primary"><IconResume /></div></a
 		>
 	</div>

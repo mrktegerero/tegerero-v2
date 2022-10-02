@@ -59,6 +59,8 @@
 <style lang="postcss">
 	.navigation {
 		@apply grid transition-all duration-300 ease-in-out grid-cols-[minmax(0,_1fr)_min-content_minmax(0,_1fr)] xl:grid-cols-[minmax(0,_1fr)_min-content_minmax(0,_3fr)];
+
+		@apply z-50;
 		/* grid-template-columns: minmax(0, 1fr) min-content minmax(0, 2fr); */
 	}
 
