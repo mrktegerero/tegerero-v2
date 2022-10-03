@@ -1,19 +1,11 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
 	import NavDesktopMain from './NavDesktopMain.svelte';
 	import NavDesktopLink from './NavDesktopLink.svelte';
-	import { getContext, setContext } from 'svelte';
-	import { createUrlStore } from '$lib/url';
 	import NavMobile from './NavMobile.svelte';
-	export let ssrUrl = '';
-
-	setContext('APP', { url: createUrlStore(ssrUrl) });
-
-	// Usage across descendants for SSR support
-	const { url } = getContext('APP');
 </script>
 
-{#if $url.pathname !== '/' && $url.pathname === '/work'}
+{#if $page.url.pathname !== '/' && $page.url.pathname === '/work'}
 	<NavDesktopMain>
 		<svelte:fragment slot="navLink">
 			<NavDesktopLink href="/#about" label="About" />
@@ -23,5 +15,5 @@
 		</svelte:fragment>
 	</NavDesktopMain>
 
-	<NavMobile/>
+	<NavMobile />
 {/if}

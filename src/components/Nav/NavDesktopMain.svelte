@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import Icon from '$images/KT-icon.png';
 	import Resume from '$files/resume.pdf';
 	import NavMain from './NavMain.svelte';
@@ -8,8 +9,7 @@
 	import NavDesktopIcon from './NavDesktopIcon.svelte';
 	import NavDesktopIconMain from './NavDesktopIconMain.svelte';
 
-
-  	let y: number = 0;
+	let y: number = 0;
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -35,35 +35,53 @@
 	</div>
 
 	<div class="flex flex-row items-center justify-end">
-		<NavDesktopIconMain
+		<NavDesktopIconMain>
+			<div
+				class="icon-1"
+				class:animation={$page.url.pathname === '/' && $page.url.pathname !== '/work'}
 			>
-      <div class="icon-animation">
-        <NavDesktopIcon class="animate-[left_0.5s_ease-in-out] animation-delay-1000 animation-fill-both" href="https://twitter.com/mr_ktegerero" label="Twitter"
-				><IconTwitter /></NavDesktopIcon
+				<NavDesktopIcon href="https://twitter.com/mr_ktegerero" label="Twitter"
+					><IconTwitter /></NavDesktopIcon
+				>
+			</div>
+			<div
+				class="icon-2"
+				class:animation={$page.url.pathname === '/' && $page.url.pathname !== '/work'}
 			>
-      </div>
-      <div class="icon-animation">
-        <NavDesktopIcon  class="animate-[left_0.5s_ease-in-out] animation-delay-1200 animation-fill-both" href="https://github.com/mrktegerero" label="Github"
-				><IconGithub /></NavDesktopIcon
-			>
-      </div>
-      </NavDesktopIconMain
-      >
+				<NavDesktopIcon href="https://github.com/mrktegerero" label="Github"
+					><IconGithub /></NavDesktopIcon
+				>
+			</div>
+		</NavDesktopIconMain>
 		<a
 			data-tooltip="Check my resume!"
 			href={Resume}
 			target="_blank"
-			class="bg-muted-dark-bg p-3 rounded-full relative icon-animation animate-[left_0.5s_ease-in-out] animation-delay-1400 animation-fill-both"
+			class="bg-muted-dark-bg p-3 rounded-full relative icon-3"
+			class:animation={$page.url.pathname === '/' && $page.url.pathname !== '/work'}
 			><div class="w-6 text-primary"><IconResume /></div></a
 		>
 	</div>
 </NavMain>
 
 <style lang="postcss">
-  
-
-  	.hide-text {
+	.hide-text {
 		@apply opacity-0 translate-x-[-2rem];
 	}
 
+	.animation {
+		@apply animate-[left_0.5s_ease-in-out] animation-fill-both;
+	}
+
+	.icon-1 {
+		@apply animation-delay-1000;
+	}
+
+	.icon-2 {
+		@apply animation-delay-1200;
+	}
+
+	.icon-3 {
+		@apply animation-delay-1400;
+	}
 </style>

@@ -10,7 +10,9 @@
 	import { screens } from '$lib/responsive';
 	import { scale, fly } from 'svelte/transition';
 	import AboutCompanies from './AboutCompanies.svelte';
-	import Begin from '$images/icon-image/beginning.png';
+	import SEO from '$images/icon-image/seo.png';
+	import FrontEnd from '$images/icon-image/front-end.png';
+	import TechStack from '$images/icon-image/tech-stack.png';
 	import Chimes from '$images/companies/chimes.png';
 	import FStack from '$images/companies/fullstackhq.png';
 	import Soda from '$images/companies/soda.png';
@@ -26,24 +28,24 @@
 	let content = [
 		{
 			label: 'Front-End',
-			img: Begin,
+			img: FrontEnd,
 			desc: 'I develop front-end with super smooth coding',
 			subtitle: 'Every fantastic design needs a fantastic Front-end dev',
 			comment: `Since the beginning of my journey as a front-end developer nearly 2 years ago. I've done remote work with such an amazing companies with talented people to create web applications for both business and consumer use. I'm confident, naturally curious and actively seek out new technologies to improve coding.`
 		},
 		{
+			label: 'Tech Stacks',
+			img: TechStack,
+			desc: `Front End technologies I've been worked with`,
+			subtitle: 'Developers use a combination of loosely termed tools as the frontend tech stack.',
+			comment: `JavaScript (ES6+), React, Typescript, Next.js, Gatsby, Vercel, Prismic, ASP.NET, Umbraco, Svelte, SvelteKit, Tailwind, Bootstrap and Chakra UI`
+		},
+		{
 			label: 'SEO',
-			img: Begin,
+			img: SEO,
 			desc: `Let's boost your website with SEO optimize`,
 			subtitle: 'SEO can makes your website more visible',
 			comment: `Optimizing SEO can helps businesses to find new customers and promote brans on top pages of section engines that makes easy to find. Let's take advantage of the latest modern technologies to build amazing user experiences for everyone.`
-		},
-		{
-			label: 'Photo Editing',
-			img: Begin,
-			desc: 'Enhance images for better quality',
-			subtitle: 'Produce required visuals for build up websites',
-			comment: `In my college years, enhancing images and editing videos are one of my hubbies. I love to create exact visuals to represent the business. I do cropping, optimizing image quality and understanding different image formats to use in every situations.`
 		}
 	];
 
@@ -88,7 +90,7 @@
 				<Text class="text-2xl md:text-3xl">Hello! I'm Kurt Tegerero</Text>
 				<Spacer size="sm" />
 				<Spacer size="md" />
-				<div class=" stacked">
+				<div class="stacked">
 					{#key current}
 						<div
 							out:fly|local={{

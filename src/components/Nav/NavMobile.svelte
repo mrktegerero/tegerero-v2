@@ -28,7 +28,9 @@
 		</NavigationIcon>
 	</div>
 
-	<div class="flex flex-row items-center justify-center animate-[left_0.5s_ease-in-out] animation-fill-both @apply animation-delay-200">
+	<div
+		class="flex flex-row items-center justify-center animate-[left_0.5s_ease-in-out] animation-fill-both @apply animation-delay-200"
+	>
 		<a
 			href="/"
 			class="flex flex-row w-40 transition-all duration-500 delay-300 ease-in-out"
@@ -50,12 +52,16 @@
 
 	<div class="flex flex-row items-center justify-end">
 		<div class="hidden sm:block">
-			<NavDesktopIconMain >
-				<NavigationIcon class="animate-[left_0.5s_ease-in-out] animation-fill-both animation-delay-400" href="https://twitter.com/mr_ktegerero" name="Twitter"
-					><IconTwitter /></NavigationIcon
+			<NavDesktopIconMain>
+				<NavigationIcon
+					class="animate-[left_0.5s_ease-in-out] animation-fill-both animation-delay-400"
+					href="https://twitter.com/mr_ktegerero"
+					name="Twitter"><IconTwitter /></NavigationIcon
 				>
-				<NavigationIcon class="animate-[left_0.5s_ease-in-out] animation-fill-both animation-delay-600" href="https://github.com/mrktegerero" name="Github"
-					><IconGithub /></NavigationIcon
+				<NavigationIcon
+					class="animate-[left_0.5s_ease-in-out] animation-fill-both animation-delay-600"
+					href="https://github.com/mrktegerero"
+					name="Github"><IconGithub /></NavigationIcon
 				></NavDesktopIconMain
 			>
 		</div>
@@ -69,11 +75,11 @@
 	</div>
 </NavMain>
 
-<NavMobileMenu/>
+<NavMobileMenu />
 
 <style lang="postcss">
 	.hide-text {
-		@apply opacity-0 translate-x-[-2rem] ;
+		@apply opacity-0 translate-x-[-2rem];
 	}
 
 	.center {

@@ -7,7 +7,7 @@
 	export let alt = '';
 	// let icon = '/src/images/KT-icon.png';
 	import icon from '$images/KT-icon.png';
-	import image from '$images/tegerero_web.png';
+	import image from '$images/tegerero_web_2.png';
 </script>
 
 <svelte:head>

@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { afterUpdate } from 'svelte';
+	import { page } from '$app/stores';
+
 	export let label: string = '';
 	export let number: string = '';
 	export let href: string = '';
@@ -8,7 +9,13 @@
 	export let footer: boolean = undefined;
 </script>
 
-<a {href} class="link" class:footer class:active on:click={onClick}
+<a
+	{href}
+	class="link"
+	class:footer
+	class:active
+	on:click={onClick}
+	class:animation={$page.url.pathname === '/' && $page.url.pathname !== '/work'}
 	><span class="text-primary pr-1">{number}</span>{label}</a
 >
 
@@ -22,7 +29,9 @@
 		@apply after:content-['>'] after:absolute after:right-[0.2rem] after:opacity-0 after:transition-all after:duration-300 after:ease-out hover:after:right-[-1rem] hover:after:opacity-100;
 
 		@apply focus:after:right-[-1rem] focus:after:opacity-100;
+	}
 
+	.animation {
 		@apply animate-[left_0.5s_ease-in-out] animation-fill-both;
 	}
 
