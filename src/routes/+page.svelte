@@ -126,9 +126,11 @@
 	<Grid hide gridHalf>
 		<svelte:fragment slot="grid-left">
 			<Spacer size="sm" />
-			<Text class="text-[2.5rem] leading-[3.5rem] xl:pl-32">Latest Works</Text>
-			<Text class="text-muted-text text-sm xl:pl-32">Perfect solutions for digital experience</Text>
+			<Text header class="xl:pl-32">Latest Works</Text>
+			<Text description class="xl:pl-32">Perfect solutions for digital experience</Text>
+			<div class="hidden md:block">
 			<Spacer size="lg" />
+		</div>
 			<Spacer size="lg" />
 			<ProjectCard title="Mansion 88" src={Mansion} class="bg-[#191C2F]" right>
 				<svelte:fragment slot="tags">
@@ -197,11 +199,11 @@
 	<Spacer size="lg" />
 	<Grid gridQuarter>
 		<svelte:fragment slot="grid-left">
-			<Text class="text-[2.5rem] leading-[3.5rem]">Experience</Text>
+			<Text header>Experience</Text>
 		</svelte:fragment>
 		<svelte:fragment slot="grid-right">
 			<div class="flex items-stretch h-full w-full">
-				<Text class="text-mute-text text-sm lg:pl-32 self-end pb-3"
+				<Text description class="lg:pl-32 self-end pb-3"
 					>Companies that I once working with made me who I am</Text
 				>
 			</div>

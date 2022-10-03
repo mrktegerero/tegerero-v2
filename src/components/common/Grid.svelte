@@ -2,6 +2,8 @@
 	export let hide: boolean = false;
 	export let gridHalf: boolean = false;
 	export let gridQuarter: boolean = false;
+	let classes: string = '';
+	export { classes as class };
 </script>
 
 <div class="grid grid-cols-12 w-full" class:grid-half={gridHalf}>

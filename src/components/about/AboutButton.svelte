@@ -14,8 +14,8 @@ import { createEventDispatcher } from 'svelte';
 	{#each items as item}
 		<div on:click={click(item)} class="group button" class:active={item === current}>
       <div class="flex justify-between items-center">
-        <p class="text-xl font-mono transition duration-200 group-hover:text-primary" class:text-active={item === current}>{item.label}</p>
-        <div class="w-5">
+        <p class="md:text-xl font-mono transition duration-200 group-hover:text-primary" class:text-active={item === current}>{item.label}</p>
+        <div class="w-4 md:w-5">
         <img src={item.img} alt="">
       </div>
       </div>

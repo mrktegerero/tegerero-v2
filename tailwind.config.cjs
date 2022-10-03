@@ -17,19 +17,29 @@ module.exports = {
 			1000: '1000ms',
 			1100: '1100ms',
 			1200: '1200ms',
+			1300: '1300ms',
 			1400: '1400ms',
+			1500: '1500ms',
 			1600: '1600ms',
 			1700: '1700ms',
 			1800: '1800ms',
+			1900: '1900ms',
+			2000: '2000ms',
+			2100: '2100ms',
 			2200: '2200ms',
-			2400: '2400ms'
+			2300: '2300ms',
+			2400: '2400ms',
+			2500: '2500ms',
+			2600: '2600ms',
+			2700: '2700ms',
+			2800: '2800ms',
+			2900: '2900ms',
+			3000: '3000ms',
 		},
 		fontWeight: {
 			...defaultTheme.fontWeight
 		},
 		fontFamily: {
-			//	satoshi: ['PlusJakartaSans', ...defaultTheme.fontFamily.sans],
-			// sans: ['PlusJakartaSans', ...defaultTheme.fontFamily.sans],
 			cali: ['Calibre', ...defaultTheme.fontFamily.sans],
 			monts: ['Montserrat', ...defaultTheme.fontFamily.serif],
 			mono: ['SFMono', ...defaultTheme.fontFamily.mono]
@@ -43,6 +53,11 @@ module.exports = {
 				show: {
 					'0%': { top: '-42px', opacity: '0' },
 					'20%': { top: '-42px', opacity: '0' },
+					'100%': { top: '0', opacity: '1' }
+				},
+				bottom: {
+					'0%': { top: '42px', opacity: '0' },
+					'20%': { top: '42px', opacity: '0' },
 					'100%': { top: '0', opacity: '1' }
 				},
 				opacity: {

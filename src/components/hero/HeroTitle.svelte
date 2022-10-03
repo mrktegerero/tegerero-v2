@@ -12,6 +12,6 @@
 	}
 
 	.devTitle {
-		@apply animate-[show_0.5s_ease-in-out] animation-fill-both animation-delay-800 sm:animation-delay-1200 lg:animation-delay-1800;
+		@apply animate-[bottom_0.5s_ease-in-out] animation-fill-both animation-delay-800 sm:animation-delay-1200 lg:animation-delay-1800;
 	}
 </style>

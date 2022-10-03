@@ -19,10 +19,9 @@
 
 	export let start = 0;
 	// let begin = '/src/images/icon-image/beginning.png';
-  // let company1 = '/src/images/companies/chimes.png';
-  // let company2 = '/src/images/companies/fullstackhq.png';
-  // let company3 = '/src/images/companies/soda.png';
-	
+	// let company1 = '/src/images/companies/chimes.png';
+	// let company2 = '/src/images/companies/fullstackhq.png';
+	// let company3 = '/src/images/companies/soda.png';
 
 	let content = [
 		{
@@ -37,28 +36,28 @@
 			img: Begin,
 			desc: `Let's boost your website with SEO optimize`,
 			subtitle: 'SEO can makes your website more visible',
-			comment: `Optimizing SEO can helps businesses to find new customers and promote brans on top pages of section engines that makes easy to find. Let's take advantage of the latest modern technologies to build amazing user experiences for everyone.`,
+			comment: `Optimizing SEO can helps businesses to find new customers and promote brans on top pages of section engines that makes easy to find. Let's take advantage of the latest modern technologies to build amazing user experiences for everyone.`
 		},
 		{
 			label: 'Photo Editing',
 			img: Begin,
 			desc: 'Enhance images for better quality',
 			subtitle: 'Produce required visuals for build up websites',
-			comment: `In my college years, enhancing images and editing videos are one of my hubbies. I love to create exact visuals to represent the business. I do cropping, optimizing image quality and understanding different image formats to use in every situations.`,
+			comment: `In my college years, enhancing images and editing videos are one of my hubbies. I love to create exact visuals to represent the business. I do cropping, optimizing image quality and understanding different image formats to use in every situations.`
 		}
 	];
 
-  let companies = [
-    {
-      img: Soda,
-    },
-    {
-      img: FStack,
-    },
-    {
-      img: Chimes,
-    }
-  ]
+	let companies = [
+		{
+			img: Soda
+		},
+		{
+			img: FStack
+		},
+		{
+			img: Chimes
+		}
+	];
 
 	start = start % content.length;
 
@@ -72,51 +71,55 @@
 	}
 </script>
 
-<Grid gridHalf>
-	<svelte:fragment slot="grid-left">
-		<div class="w-full pb-8 lg:pb-12 lg:bottom-0">
-			<AboutButton items={content} {current} on:select={select} />
-		</div>
-	</svelte:fragment>
-	<svelte:fragment slot="grid-right">
-		<div class="lg:pl-16 lg:pr-24 relative">
-			<Text class="text-muted-text text-xs">Introduce</Text>
-			<Spacer size="sm" />
-			<Spacer size="sm" />
-			<Text class="text-3xl">Hello! I'm Kurt Tegerero</Text>
-			<Spacer size="sm" />
-			<Spacer size="md" />
-			<div class=" stacked">
-				{#key current}
-					<div
-						out:fly|local={{
-							x: !$screens.md ? 0 : -30,
-							y: !$screens.md ? 0 : 0,
-							delay: !$screens.md ? 800 : 400,
-							duration: 200,
-							opacity: 0,
-							easing: cubicInOut
-						}}
-						in:fly|local={{
-							delay: !$screens.md ? 800 : 400,
-							duration: 400,
-							opacity: 0,
-							x: !$screens.md ? 0 : 30,
-							y: !$screens.md ? 30 : 0,
-							easing: cubicInOut
-						}}
-					>
-						<Text class="italic">{current.subtitle}</Text>
-						<Spacer size="sm" />
-						<Spacer size="sm" />
-						<Text class="text-muted-text text-xs leading-6">{current.comment}</Text>
-					</div>
-				{/key}
+<div
+	class="animate-[bottom_0.5s_ease-in-out] animation-fill-both animation-delay-2000 sm:animation-delay-2600 lg:animation-delay-3000"
+>
+	<Grid gridHalf>
+		<svelte:fragment slot="grid-left">
+			<div class="w-full pb-8 lg:pb-12 lg:bottom-0">
+				<AboutButton items={content} {current} on:select={select} />
 			</div>
-		</div>
-	</svelte:fragment>
-</Grid>
+		</svelte:fragment>
+		<svelte:fragment slot="grid-right">
+			<div class="lg:pl-16 lg:pr-24 relative">
+				<Text class="text-muted-text text-xs">Introduce</Text>
+				<Spacer size="sm" />
+				<Spacer size="sm" />
+				<Text class="text-2xl md:text-3xl">Hello! I'm Kurt Tegerero</Text>
+				<Spacer size="sm" />
+				<Spacer size="md" />
+				<div class=" stacked">
+					{#key current}
+						<div
+							out:fly|local={{
+								x: !$screens.md ? 0 : -30,
+								y: !$screens.md ? 0 : 0,
+								delay: !$screens.md ? 800 : 400,
+								duration: 200,
+								opacity: 0,
+								easing: cubicInOut
+							}}
+							in:fly|local={{
+								delay: !$screens.md ? 800 : 400,
+								duration: 400,
+								opacity: 0,
+								x: !$screens.md ? 0 : 30,
+								y: !$screens.md ? 30 : 0,
+								easing: cubicInOut
+							}}
+						>
+							<Text class="italic">{current.subtitle}</Text>
+							<Spacer size="sm" />
+							<Spacer size="sm" />
+							<Text class="text-muted-text text-xs leading-6">{current.comment}</Text>
+						</div>
+					{/key}
+				</div>
+			</div>
+		</svelte:fragment>
+	</Grid>
+</div>
 <Spacer size="lg" />
 <Spacer size="sm" />
 
-<AboutCompanies items={companies}/>
+<AboutCompanies items={companies} />
