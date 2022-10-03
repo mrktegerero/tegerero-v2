@@ -14,7 +14,7 @@
 
 <style lang="postcss">
 	.link {
-		@apply text-light-text leading-7 text-[13px] font-mono mr-12 last:mr-0 relative transition-all duration-300 hover:text-primary focus:text-primary;
+		@apply text-light-text leading-7 text-[13px] font-mono mr-12 last:mr-0  relative transition-all duration-300 hover:text-primary focus:text-primary;
 		@apply before:content-['<'] before:absolute before:left-[0.4rem] before:opacity-0 before:transition-all before:duration-300 before:ease-out hover:before:left-[-0.8rem] hover:before:opacity-100;
 
 		@apply focus:before:left-[-0.8rem] focus:before:opacity-100;

@@ -99,7 +99,7 @@
 	</svelte:fragment>
 </NavDesktopMain>
 
-<NavMobile/>
+<NavMobile />
 
 <!-- <slot/> -->
 
@@ -129,8 +129,8 @@
 			<Text header class="xl:pl-32">Latest Works</Text>
 			<Text description class="xl:pl-32">Perfect solutions for digital experience</Text>
 			<div class="hidden md:block">
-			<Spacer size="lg" />
-		</div>
+				<Spacer size="lg" />
+			</div>
 			<Spacer size="lg" />
 			<ProjectCard title="Mansion 88" src={Mansion} class="bg-[#191C2F]" right>
 				<svelte:fragment slot="tags">
@@ -212,95 +212,102 @@
 	<Spacer size="lg" />
 	<Grid gridQuarter>
 		<svelte:fragment slot="grid-left">
-			<Text class="text-sm text-white-bg hidden lg:block">2022 - present</Text>
+			<Text class="text-sm text-light-muted-text hidden lg:block">2022 - present</Text>
 		</svelte:fragment>
 		<svelte:fragment slot="grid-right">
-			<Text class="text-sm xl:pl-32"
+			<Text class="text-base xl:pl-32"
 				>Front-end Developer <Link
 					href="https://www.sodadigital.com.au/"
 					label="@Soda Digital"
 					newTab
 				/></Text
 			>
-			<Text class="text-sm text-white-bg lg:hidden pt-2">2022 - present</Text>
+			<Text class="text-sm text-light-muted-text lg:hidden pt-2">2022 - present</Text>
 			<Spacer size="sm" />
 			<Text class="text-mute-text text-sm pt-3 xl:pl-32"
 				><span class="text-muted-text">▶</span> Developed and maintained code for in-house and
-				client websites, tested site <span class="text-light-text">compatibility</span> across
+				client websites, tested site <span class="text-light-muted-text">compatibility</span> across
 				multiple browsers and devices, uncovering and debugging issues and addressing
 				inconsistencies and debug errors, troubleshoot issues, and perform routine performance
-				<span class="text-light-text">optimizations</span>.
+				<span class="text-light-muted-text">optimizations</span>.
 			</Text>
 			<Text class="text-mute-text text-sm pt-7 xl:pl-32"
-				><span class="text-light-text">Svelte</span>,
-				<span class="text-light-text">SvelteKit</span>,
-				<span class="text-light-text">Shopify API</span>,
-				<span class="text-light-text">Asp.Net</span>, <span class="text-light-text">React</span>,
-				<span class="text-light-text">Typescript</span>,
-				<span class="text-light-text">Umbraco</span>, <span class="text-light-text">Bootstrap</span>
-				and <span class="text-light-text">Tailwind</span>.</Text
+				><span class="text-light-muted-text">Svelte</span>,
+				<span class="text-light-muted-text">SvelteKit</span>,
+				<span class="text-light-muted-text">Shopify API</span>,
+				<span class="text-light-muted-text">Asp.Net</span>,
+				<span class="text-light-muted-text">React</span>,
+				<span class="text-light-muted-text">Typescript</span>,
+				<span class="text-light-muted-text">Umbraco</span>,
+				<span class="text-light-muted-text">Bootstrap</span>
+				and <span class="text-light-muted-text">Tailwind</span>.</Text
 			>
 		</svelte:fragment>
 	</Grid>
 	<Spacer size="lg" />
 	<Grid gridQuarter>
 		<svelte:fragment slot="grid-left">
-			<Text class="text-sm text-white-bg hidden lg:block">2021 - 2022</Text>
+			<Text class="text-sm text-light-muted-text hidden lg:block">2021 - 2022</Text>
 		</svelte:fragment>
 		<svelte:fragment slot="grid-right">
-			<Text class="text-sm xl:pl-32"
+			<Text class="text-base xl:pl-32"
 				>Web Developer <Link href="https://fullstackhq.com/" label="@Fullstack HQ" newTab /></Text
 			>
-			<Text class="text-sm text-white-bg lg:hidden pt-2">2021 - 2022</Text>
+			<Text class="text-sm text-light-muted-text lg:hidden pt-2">2021 - 2022</Text>
 			<Spacer size="sm" />
 			<Text class="text-mute-text text-sm pt-3 xl:pl-32"
 				><span class="text-muted-text">▶</span> Work with a variety of different languages,
 				platforms, frameworks, and content management systems, Implemented a
-				<span class="text-light-text">pixel-perfect</span> websites and landing pages from concept
-				through development and Standardized all output with a new,
-				<span class="text-light-text">responsive</span>, mobile-first approach and strategy.
+				<span class="text-light-muted-text">pixel-perfect</span> websites and landing pages from
+				concept through development and Standardized all output with a new,
+				<span class="text-light-muted-text">responsive</span>, mobile-first approach and strategy.
 			</Text>
 			<Text class="text-mute-text text-sm pt-7 xl:pl-32"
-				><span class="text-light-text">JavaScript</span>,
-				<span class="text-light-text">Typescript</span>,
-				<span class="text-light-text">Gatsby</span>, <span class="text-light-text">React</span>,
-				<span class="text-light-text">Next.js</span>, <span class="text-light-text">Vercel</span>,
-				<span class="text-light-text">Chakra UI</span>, <span class="text-light-text">Prismic</span>
-				and <span class="text-light-text">Netlify</span>.</Text
+				><span class="text-light-muted-text">JavaScript</span>,
+				<span class="text-light-muted-text">Typescript</span>,
+				<span class="text-light-muted-text">Gatsby</span>,
+				<span class="text-light-muted-text">React</span>,
+				<span class="text-light-muted-text">Next.js</span>,
+				<span class="text-light-muted-text">Vercel</span>,
+				<span class="text-light-muted-text">Chakra UI</span>,
+				<span class="text-light-muted-text">Prismic</span>
+				and <span class="text-light-muted-text">Netlify</span>.</Text
 			>
 		</svelte:fragment>
 	</Grid>
 	<Spacer size="lg" />
 	<Grid gridQuarter>
 		<svelte:fragment slot="grid-left">
-			<Text class="text-sm text-white-bg hidden lg:block">2021</Text>
+			<Text class="text-sm text-light-muted-text hidden lg:block">2021</Text>
 		</svelte:fragment>
 		<svelte:fragment slot="grid-right">
-			<Text class="text-sm xl:pl-32 hidden sm:block"
+			<Text class="text-base xl:pl-32 hidden sm:block"
 				>Front-end Developer Associate <Link
 					href="https://www.chimesconsulting.com/"
 					label="@Chimes Consulting"
 					newTab
 				/></Text
 			>
-			<Text class="text-sm xl:pl-32 sm:hidden"
+			<Text class="text-base xl:pl-32 sm:hidden"
 				>Front-end Developer Associate <Link
 					href="https://www.chimesconsulting.com/"
 					label="@Chimes"
 					newTab
 				/></Text
 			>
-			<Text class="text-sm text-white-bg lg:hidden pt-2">2021</Text>
+			<Text class="text-sm text-light-muted-text lg:hidden pt-2">2021</Text>
 			<Spacer size="sm" />
 			<Text class="text-mute-text pt-3 xl:pl-32 text-sm"
-				><span class="text-muted-text">▶</span> Created <span class="text-light-text">mockup</span> designs
-				for web application and mobile app and Build Chimes Consulting HR System with product team members
-				to implement new feature developments.</Text
+				><span class="text-muted-text">▶</span> Created
+				<span class="text-light-muted-text">mockup</span> designs for web application and mobile app
+				and Build Chimes Consulting HR System with product team members to implement new feature developments.</Text
 			>
 			<Text class="text-mute-text text-sm pt-7 xl:pl-32 "
-				><span class="text-light-text">HTML</span>, <span class="text-light-text">PHP</span> ,
-				<span class="text-light-text">CSS</span>
-				and <span class="text-light-text">JavaScript</span>.</Text
+				><span class="text-light-muted-text">HTML</span>,
+				<span class="text-light-muted-text">PHP</span>
+				,
+				<span class="text-light-muted-text">CSS</span>
+				and <span class="text-light-muted-text">JavaScript</span>.</Text
 			>
 		</svelte:fragment>
 	</Grid>

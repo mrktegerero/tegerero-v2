@@ -105,7 +105,8 @@ module.exports = {
 				'dark-text': '#0B0B0B',
 				'mute-text': '#656565',
 				'muted-text': '#8B8C90',
-				'light-text': '#FFFFFF'
+				'light-text': '#FFFFFF',
+				'light-muted-text': '#CFD0D0'
 			},
 
 			letterSpacing: {
