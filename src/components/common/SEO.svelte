@@ -3,10 +3,11 @@
 	// import icon from '$images/favicon-32x32.png';
 	export let title: string = `Tegerero`;
 	export let description = '';
-	export let image: string = undefined;
+	// export let image: string = undefined;
 	export let alt = '';
 	// let icon = '/src/images/KT-icon.png';
 	import icon from '$images/KT-icon.png';
+	import image from '$images/logo.png';
 </script>
 
 <svelte:head>
