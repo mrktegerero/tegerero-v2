@@ -55,9 +55,9 @@
 	class="nav {headerClass}"
 	class:desktopHide={desktopHidden}
 	class:mobileHide={!desktopHidden}
-	class:nav-scroll={y > 1}
+	class:nav-scroll={y >= 1}
 >
-	<div class="navigation w-full mx-auto flex bg-transparent h-[6.25rem]" class:nav-height={y > 1}>
+	<div class="navigation w-full mx-auto flex bg-transparent h-[6.25rem]" class:nav-height={y >= 1}>
 		<slot />
 	</div>
 </div>
@@ -71,7 +71,7 @@
 	}
 
 	.nav {
-		@apply sticky top-0 w-full z-50 transition-all duration-300 ease-in-out hidden lg:block px-4 lg:px-14;
+		@apply sticky top-0 w-full z-50 transition-all duration-300 ease-in-out hidden lg:block px-4 lg:px-14 h-max;
 	}
 
 	.mobileHide {
@@ -82,6 +82,9 @@
 		@apply block lg:hidden;
 	}
 
+	.height-full {
+		@apply h-max;
+	}
 	.nav-scroll {
 		@apply h-[4.25rem] bg-[rgba(45,_46,_50,_0.85)] shadow-[0_10px_30px_-10px_#25262A] backdrop-blur;
 	}
