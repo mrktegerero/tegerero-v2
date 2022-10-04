@@ -20,7 +20,7 @@
 	// let resume = '/src/resume.pdf';
 
 	function deriveClass(y, dy) {
-		if (y < offset) {
+		if (y <= offset) {
 			return 'show';
 		}
 
@@ -28,7 +28,7 @@
 			return headerClass;
 		}
 
-		if (dy < 0) {
+		if (dy <= 0) {
 			return 'hide';
 		}
 
