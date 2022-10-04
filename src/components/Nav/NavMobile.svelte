@@ -33,7 +33,7 @@
 	>
 		<a
 			href="/"
-			class="flex flex-row w-40 transition-all duration-500 delay-300 ease-in-out"
+			class="flex flex-row w-40 items-center justify-center transition-all duration-500 delay-300 ease-in-out"
 			class:center={y >= 1}
 		>
 			<div class="w-8">
@@ -49,7 +49,6 @@
 			</div></a
 		>
 	</div>
-
 	<div class="flex flex-row items-center justify-end">
 		<div class="hidden sm:block">
 			<NavDesktopIconMain>
@@ -83,6 +82,6 @@
 	}
 
 	.center {
-		@apply translate-x-[4rem];
+		@apply translate-x-[2.5rem];
 	}
 </style>

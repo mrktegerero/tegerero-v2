@@ -31,14 +31,14 @@
 			img: FrontEnd,
 			desc: 'I develop front-end with super smooth coding',
 			subtitle: 'Every fantastic design needs a fantastic Front-end dev',
-			comment: `Since the beginning of my journey as a front-end developer nearly 2 years ago. I've done remote work with such an amazing companies with talented people to create web applications for both business and consumer use. I'm confident, naturally curious and actively seek out new technologies to improve coding.`
+			comment: `Since the beginning of my journey as a front-end developer nearly 2 years ago. I've done remote work with such an amazing companies with talented people to create web applications for both business and consumer use. I am confident, naturally curious and actively seeking out new technologies to improve coding.`
 		},
 		{
 			label: 'Tech Stacks',
 			img: TechStack,
 			desc: `Front End technologies I've been worked with`,
 			subtitle: 'Developers use a combination of loosely termed tools as the frontend tech stack.',
-			comment: `JavaScript (ES6+), React, Typescript, Next.js, Gatsby, Vercel, Prismic, ASP.NET, Umbraco, Svelte, SvelteKit, Tailwind, Bootstrap and Chakra UI`
+			comment: `JavaScript (ES6+), React, Typescript, Next.js, Gatsby, Svelte, SvelteKit, Vercel, Clouflare, Prismic, ASP.NET, Umbraco,  SASS, Tailwind, Bootstrap and Chakra UI`
 		},
 		{
 			label: 'SEO',
@@ -83,7 +83,7 @@
 			</div>
 		</svelte:fragment>
 		<svelte:fragment slot="grid-right">
-			<div class="lg:pl-16 lg:pr-24 relative">
+			<div class="lg:pl-16 xl:pr-24 relative">
 				<Text class="text-muted-text text-xs">Introduce</Text>
 				<Spacer size="sm" />
 				<Spacer size="sm" />

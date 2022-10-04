@@ -50,9 +50,15 @@
 
 <svelte:window bind:scrollY={y} />
 
-<div use:setTransitionDuration class="nav {headerClass}" class:desktopHide={desktopHidden} class:mobileHide={!desktopHidden} class:nav-scroll={y >= 1}>
-	<div class="navigation w-full mx-auto flex bg-transparent h-[6.25rem]" class:nav-height={y >= 1}>
-	<slot/>
+<div
+	use:setTransitionDuration
+	class="nav {headerClass}"
+	class:desktopHide={desktopHidden}
+	class:mobileHide={!desktopHidden}
+	class:nav-scroll={y > 1}
+>
+	<div class="navigation w-full mx-auto flex bg-transparent h-[6.25rem]" class:nav-height={y > 1}>
+		<slot />
 	</div>
 </div>
 
