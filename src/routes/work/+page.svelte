@@ -2,53 +2,27 @@
 	import Spacer from '$components/common/Spacer.svelte';
 	import Text from '$components/common/Text.svelte';
 	import Container from '$components/containers/Container.svelte';
+	import Projects from '$components/Projects.svelte';
 </script>
 
 <Container wide gutters>
-	<div class="hidden lg:block">
+	<div class="animate-[bottom_0.5s_ease-in-out] animation-fill-both animation-delay-300">
+		<div class="hidden lg:block">
+			<Spacer size="lg" />
+		</div>
 		<Spacer size="lg" />
+		<Text header>All Projects</Text>
+		<Text descriptionPrimary class="self-end pb-3 text-primary"
+			>A great list of projects I've worked on</Text
+		>
 		<Spacer size="lg" />
-	</div>
-	<Text header>All Projects</Text>
-	<Text description class=" self-end pb-3">A great list of projects I've worked on</Text>
-	<Spacer size="lg" />
-	<div>
-		<!-- <div class="flex justify-between">
-			<div>Year</div>
-			<div>Title</div>
-			<div>Made at</div>
-			<div>Built with</div>
-			<div>Link</div>
-		</div> -->
-    <table>
-      <thead>
-        <tr>
-          <th>Year</th>
-          <th>Title</th>
-          <th>Made at</th>
-          <th>Built with</th>
-          <th>Link</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            2021
-          </td>
-          <td>
-            2021
-          </td>
-          <td>
-            2021
-          </td>
-          <td>
-            2021
-          </td>
-          <td>
-            2021
-          </td>
-        </tr>
-      </tbody>
-    </table>
+		<div>
+			<Projects />
+		</div>
+
+		<div class="hidden lg:block">
+			<Spacer size="lg" />
+		</div>
+		<Spacer size="lg" />
 	</div>
 </Container>

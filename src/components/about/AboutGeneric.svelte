@@ -38,7 +38,7 @@
 			img: TechStack,
 			desc: `Front End technologies I've been worked with`,
 			subtitle: 'Developers use a combination of loosely termed tools as the frontend tech stack.',
-			comment: `JavaScript (ES6+), React, Typescript, Next.js, Gatsby, Svelte, SvelteKit, Vercel, Clouflare, Prismic, ASP.NET, Umbraco,  SASS, Tailwind, Bootstrap and Chakra UI`
+			comment: `JavaScript (ES6+) · React · Typescript · Next.js · Gatsby · Svelte · SvelteKit · Vercel · Clouflare · Prismic · ASP.NET · Umbraco ·  SASS · Tailwind · Bootstrap · Chakra UI`
 		},
 		{
 			label: 'SEO',

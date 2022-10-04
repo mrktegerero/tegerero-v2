@@ -3,6 +3,7 @@
 	export let small: boolean = false;
 	export let header: boolean = false;
   export let description: boolean = false;
+	export let descriptionPrimary: boolean = false;
 	export let qouteBefore: boolean = false;
 	export let qouteAfter: boolean = false;
 	let classes: string = '';
@@ -17,6 +18,7 @@
 	class:header
   class:description
 	class:qoute-after={qouteAfter}
+	class:description-primary={descriptionPrimary}
 >
 	<slot />
 </p>
@@ -44,5 +46,9 @@
 
   .description {
 		@apply text-muted-text text-xs md:text-sm;
+	}
+
+	.description-primary {
+		@apply text-primary text-xs md:text-sm;
 	}
 </style>
