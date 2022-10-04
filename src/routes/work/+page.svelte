@@ -6,7 +6,7 @@
 </script>
 
 <Container wide gutters>
-	<div class="animate-[bottom_0.5s_ease-in-out] animation-fill-both animation-delay-300">
+	<div class="animate-[bottom_0.5s_ease-in-out] animation-fill-both animation-delay-500">
 		<div class="hidden lg:block">
 			<Spacer size="lg" />
 		</div>

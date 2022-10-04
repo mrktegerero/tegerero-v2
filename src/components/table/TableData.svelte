@@ -12,10 +12,10 @@
 	{#if github || link}
 		<div class="flex">
 			{#if link}
-				<a href={link}><div class="w-5 mx-1 icon"><IconLink /></div> </a>
+				<a href={link} target="_blank"><div class="w-5 mx-1 icon"><IconLink /></div> </a>
 			{/if}
 			{#if github}
-				<a href={github}><div class="w-5 mx-1 icon"><IconGithub /></div> </a>
+				<a href={github} target="_blank"><div class="w-5 mx-1 icon"><IconGithub /></div> </a>
 			{/if}
 		</div>
 	{/if}
