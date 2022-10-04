@@ -44,21 +44,21 @@
 				<Text
 					small
 					class="animate-[bottom_0.5s_ease-in-out] animation-fill-both animation-delay-1200 sm:animation-delay-1800 lg:animation-delay-2200"
-					>I build exceptional UI and UX of web applications,</Text
+					>I build exceptional UI and UX of web applications, <span class="sm:hidden"
+						>and I just love what I do.</span
+					></Text
 				>
 				<Text
 					small
-					class="animate-[bottom_0.5s_ease-in-out] animation-fill-both animation-delay-1300 sm:animation-delay-1900 lg:animation-delay-2300"
+					class="animate-[bottom_0.5s_ease-in-out] animation-fill-both animation-delay-1300 sm:animation-delay-1900 lg:animation-delay-2300 hidden sm:block"
 					>and I just love what I do.</Text
 				>
 			</div>
-			<div
-				class="pt-20 animate-[bottom_0.5s_ease-in-out] animation-fill-both animation-delay-1400 sm:animation-delay-2000 lg:animation-delay-2400"
-			>
+			<div class="pt-20 ">
 				<Link
 					href="mailto:kurtrendel@gmail.com"
 					label="Let's Chat!"
-					class="uppercase text-[1.7rem] font-bold"
+					class="uppercase text-[1.7rem] font-bold animate-[bottom_0.5s_ease-in-out] animation-fill-both animation-delay-1400 sm:animation-delay-2000 lg:animation-delay-2400"
 					large
 				/>
 			</div>

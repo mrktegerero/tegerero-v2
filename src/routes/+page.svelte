@@ -121,8 +121,10 @@
 </div>
 
 <Container wide gutters id="projects" bind:element={elements[2]} class="bg-[#25262A]">
-	<Spacer size="lg" />
-	<Spacer size="sm" />
+	<div class="hidden lg:block">
+		<Spacer size="lg" />
+		<Spacer size="sm" />
+	</div>
 	<Grid hide gridHalf>
 		<svelte:fragment slot="grid-left">
 			<Spacer size="sm" />
