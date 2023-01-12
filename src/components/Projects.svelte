@@ -15,12 +15,21 @@
 	</svelte:fragment>
 	<svelte:fragment slot="table-body">
 		<TableRow>
+			<TableData>2023</TableData>
+			<TableData>Aged Care 101</TableData>
+			<TableData>Soda Digital</TableData>
+			<TableData>ASP.NET · C# · Bootstrap · Umbraco</TableData>
+			<TableData
+				link="https://app-web-idw4ecekyj7ji.azurewebsites.net/"
+			/>
+		</TableRow>
+		<TableRow>
 			<TableData>2022</TableData>
 			<TableData>Royal Life Saving Society - Australia MVP</TableData>
 			<TableData>Soda Digital</TableData>
 			<TableData>.NET · C# · Bootstrap</TableData>
 			<TableData
-				link="https://mercer-web.azurewebsites.net/"
+				link="https://app-web-ka63eko4wrpea.azurewebsites.net/"
 			/>
 		</TableRow>
 		<TableRow>
