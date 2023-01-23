@@ -34,6 +34,15 @@
 		</TableRow>
 		<TableRow>
 			<TableData>2022</TableData>
+			<TableData>Sterland - Warehouse PWA</TableData>
+			<TableData>Soda Digital</TableData>
+			<TableData>React · Tailwind · Typescript · Postman</TableData>
+			<TableData
+				link="https://sterland-warehouse-pwa.soda.dev/#/login"
+			/>
+		</TableRow>
+		<TableRow>
+			<TableData>2022</TableData>
 			<TableData>Villages Mercer</TableData>
 			<TableData>Soda Digital</TableData>
 			<TableData>ASP.NET · C# · Bootstrap · Umbraco</TableData>
@@ -48,6 +57,15 @@
 			<TableData>SvelteKit · Tailwind · TypeScript · Shopify API · Cloudflare</TableData>
 			<TableData
 				link="https://shop.porterspaints.com/"
+			/>
+		</TableRow>
+		<TableRow>
+			<TableData>2022</TableData>
+			<TableData>Sterland - Trade Portal</TableData>
+			<TableData>Soda Digital</TableData>
+			<TableData>React · Tailwind · Typescript · Postman</TableData>
+			<TableData
+				link="https://sterland.soda.dev/#/login"
 			/>
 		</TableRow>
 		<TableRow>
