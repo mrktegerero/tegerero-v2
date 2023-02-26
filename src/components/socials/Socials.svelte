@@ -7,7 +7,7 @@
 </script>
 
 <SocialsMain>
-	<SocialLinks href="https://www.facebook.com/mr.ktegerero/"><IconFb /></SocialLinks>
+	<SocialLinks href="https://www.facebook.com/ktegerero/"><IconFb /></SocialLinks>
 	<SocialLinks href="https://twitter.com/mr_ktegerero"><IconTwitter /></SocialLinks>
-	<SocialLinks href="https://www.instagram.com/mr_ktegerero/"><IconIg /></SocialLinks>
+	<SocialLinks href="https://www.instagram.com/ktegerero/"><IconIg /></SocialLinks>
 </SocialsMain>
