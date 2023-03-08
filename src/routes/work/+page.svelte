@@ -1,10 +1,14 @@
 <script>
+	import Seo from '$components/common/SEO.svelte';
 	import Spacer from '$components/common/Spacer.svelte';
 	import Text from '$components/common/Text.svelte';
 	import Container from '$components/containers/Container.svelte';
 	import Projects from '$components/Projects.svelte';
 </script>
 
+
+
+<Seo title="Projects" description="Front End Developer @sodadigital" />
 <Container wide gutters>
 	<div class="animate-[bottom_0.5s_ease-in-out] animation-fill-both animation-delay-500">
 		<div class="hidden lg:block">

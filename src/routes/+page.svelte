@@ -68,7 +68,7 @@
 
 <svelte:window on:scroll={scroll} />
 
-<Seo title="Kurt Tegerero" description="Front end developer of @sodadigital" />
+<Seo title="Portfolio" description="Front End Developer @sodadigital" />
 
 <NavDesktopMain>
 	<svelte:fragment slot="navLink">

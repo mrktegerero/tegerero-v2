@@ -12,7 +12,7 @@
 
 <svelte:head>
 	<!-- General Tags -->
-	<title>{title}</title>
+	<title>Kurt Tegerero | {title}</title>
 	<meta name="description" content={description} />
 
 	<!-- Open Graph Tags -->
