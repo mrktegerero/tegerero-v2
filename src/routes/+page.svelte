@@ -239,6 +239,7 @@
 				<span class="text-light-muted-text">Shopify API</span>,
 				<span class="text-light-muted-text">Asp.Net</span>,
 				<span class="text-light-muted-text">React</span>,
+				<span class="text-light-muted-text">Lit</span>,
 				<span class="text-light-muted-text">Typescript</span>,
 				<span class="text-light-muted-text">Umbraco</span>,
 				<span class="text-light-muted-text">Bootstrap</span>

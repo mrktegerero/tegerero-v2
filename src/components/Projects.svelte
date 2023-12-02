@@ -16,6 +16,24 @@
 	<svelte:fragment slot="table-body">
 		<TableRow>
 			<TableData>2023</TableData>
+			<TableData>Pack & Send Australia</TableData>
+			<TableData>Soda Digital</TableData>
+			<TableData>ASP.NET · C# · Lit · Tailwind · Umbraco</TableData>
+			<TableData
+				link="https://www.packsend.com.au/"
+			/>
+		</TableRow>
+		<TableRow>
+			<TableData>2023</TableData>
+			<TableData>Caritas Australia - Supporter Hub</TableData>
+			<TableData>Soda Digital</TableData>
+			<TableData>ASP.NET · C# · Lit · Tailwind · Umbraco</TableData>
+			<TableData
+				link="https://www.caritas.org.au/supporter-hub/dashboard/"
+			/>
+		</TableRow>
+		<TableRow>
+			<TableData>2023</TableData>
 			<TableData>Aged Care 101</TableData>
 			<TableData>Soda Digital</TableData>
 			<TableData>ASP.NET · C# · Bootstrap · Umbraco</TableData>

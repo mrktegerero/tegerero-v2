@@ -66,11 +66,11 @@
 		<Spacer size="lg" />
 		<Spacer size="lg" />
 		<HeroNumber>
-			<HeroNumbers number="2">
+			<HeroNumbers number="3">
 				<HeroNumberText label="Years" />
 				<HeroNumberText label="Experience" />
 			</HeroNumbers>
-			<HeroNumbers number="14">
+			<HeroNumbers number="16">
 				<HeroNumberText label="Projects Completed" />
 				<HeroNumberText label="in my career " />
 			</HeroNumbers>

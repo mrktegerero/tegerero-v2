@@ -40,7 +40,7 @@
 				class="icon-1"
 				class:animation={$page.url.pathname === '/' && $page.url.pathname !== '/work'}
 			>
-				<NavDesktopIcon href="https://twitter.com/mr_ktegerero" label="Twitter"
+				<NavDesktopIcon href="https://twitter.com/notktrrr" label="Twitter"
 					><IconTwitter /></NavDesktopIcon
 				>
 			</div>
@@ -48,7 +48,7 @@
 				class="icon-2"
 				class:animation={$page.url.pathname === '/' && $page.url.pathname !== '/work'}
 			>
-				<NavDesktopIcon href="https://github.com/mrktegerero" label="Github"
+				<NavDesktopIcon href="https://github.com/kurttegerero" label="Github"
 					><IconGithub /></NavDesktopIcon
 				>
 			</div>
